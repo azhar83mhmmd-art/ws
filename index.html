@@ -1,0 +1,1425 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tajud Dipenjaruy (WS) — Official Historical Archive</title>
+<meta name="description" content="Official Historical Archive squad Mobile Legends Tajud Dipenjaruy (WS). The First Record Is Written. The History Continues.">
+<meta name="theme-color" content="#0a090c">
+<meta name="color-scheme" content="dark">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="assets/icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/icons/icon-192.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap">
+<style>
+/* =========================================================
+   TAJUD DIPENJARUY — OFFICIAL HISTORICAL ARCHIVE
+   Tema warna mengikuti proyek ml-squad-biography:
+   deep black + charcoal, crimson (aksen utama), gold (detail arsip).
+   ========================================================= */
+:root{
+  --bg:#0a090c; --bg-soft:#100e12; --surface:#16131a; --surface-2:#1c1820;
+  --line:rgba(255,255,255,.09); --line-2:rgba(255,255,255,.16);
+  --text:#f4efe9; --dim:#a89fae; --faint:#857d8c;
+  --accent:#d81e3f; --accent-2:#ff6b85; --accent-soft:rgba(216,30,63,.16); --accent-glow:rgba(216,30,63,.35);
+  --gold:#c9a15a; --gold-soft:rgba(201,161,90,.16);
+  --f-display:'Anton','Bebas Neue','Oswald','Roboto Condensed','Arial Narrow',Impact,sans-serif;
+  --f-body:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --f-mono:ui-monospace,'SFMono-Regular',Menlo,Consolas,'Roboto Mono',monospace;
+  --maxw:1240px; --top-h:60px; --bot-h:64px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+html.lock{overflow:hidden}
+body{margin:0;background:var(--bg);color:var(--text);font:400 16px/1.6 var(--f-body);-webkit-font-smoothing:antialiased;overflow-x:hidden;padding-bottom:calc(var(--bot-h) + env(safe-area-inset-bottom))}
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background:radial-gradient(ellipse 900px 520px at 12% -8%,rgba(216,30,63,.11),transparent 60%),radial-gradient(ellipse 700px 420px at 100% 0,rgba(201,161,90,.06),transparent 55%)}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;cursor:pointer}
+h1,h2,h3,h4,p,dl,dd,ul,ol{margin:0}
+ul,ol{padding:0;list-style:none}
+::selection{background:var(--accent-soft);color:var(--text)}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:3px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip{position:absolute;left:12px;top:-60px;z-index:100;background:var(--text);color:var(--bg);padding:10px 16px;border-radius:3px;font-weight:600}
+.skip:focus{top:12px}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+.mono{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase}
+.dim{color:var(--dim)}
+.ic{flex:none;display:block}
+
+/* ---------- top bar ---------- */
+.topbar{position:sticky;top:0;z-index:50;background:rgba(10,9,12,.93);border-bottom:1px solid var(--line);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.topbar-in{max-width:var(--maxw);margin:0 auto;height:var(--top-h);padding:0 20px;display:flex;align-items:center;gap:20px}
+.brand{display:flex;align-items:center;gap:10px;font:400 1.15rem/1 var(--f-display);letter-spacing:.06em;text-transform:uppercase;white-space:nowrap;min-height:44px}
+.brand small{font:500 .62rem/1 var(--f-mono);letter-spacing:.16em;color:var(--dim);padding-left:10px;border-left:1px solid var(--line-2)}
+.top-links{display:none;margin-left:auto;gap:2px}
+.top-links a{position:relative;display:flex;align-items:center;min-height:44px;padding:0 14px;font-size:.78rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--dim);transition:color .2s}
+.top-links a::after{content:"";position:absolute;left:14px;right:14px;bottom:6px;height:2px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .3s cubic-bezier(.2,.7,.2,1)}
+.top-links a:hover,.top-links a[aria-current="true"]{color:var(--text)}
+.top-links a[aria-current="true"]::after{transform:scaleX(1)}
+.s-btn{margin-left:auto;display:flex;align-items:center;gap:10px;min-height:44px;min-width:44px;justify-content:center;padding:0 14px;border:1px solid var(--line-2);border-radius:3px;background:transparent;color:var(--dim);font-size:.8rem;transition:border-color .2s,color .2s,background .2s}
+.s-btn:hover{border-color:var(--accent);color:var(--text);background:var(--accent-soft)}
+.s-btn span{display:none}
+.s-btn kbd{font:500 .68rem var(--f-mono);border:1px solid var(--line-2);border-radius:3px;padding:1px 6px;color:var(--faint)}
+@media(min-width:960px){
+  .top-links{display:flex}
+  .s-btn{margin-left:0}
+  .s-btn span{display:inline}
+}
+@media(max-width:420px){.brand small{display:none}}
+
+/* ---------- bottom nav ---------- */
+.bottom-nav{position:fixed;left:0;right:0;bottom:0;z-index:50;height:calc(var(--bot-h) + env(safe-area-inset-bottom));padding-bottom:env(safe-area-inset-bottom);background:rgba(10,9,12,.97);border-top:1px solid var(--line-2);display:grid;grid-template-columns:repeat(7,1fr)}
+.bottom-nav a{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;min-height:44px;color:var(--faint);font:600 .6rem/1 var(--f-body);letter-spacing:.06em;text-transform:uppercase;transition:color .2s}
+.bottom-nav a::before{content:"";position:absolute;top:-1px;left:22%;right:22%;height:2px;background:var(--accent);transform:scaleX(0);transition:transform .3s cubic-bezier(.2,.7,.2,1)}
+.bottom-nav a[aria-current="true"]{color:var(--text)}
+.bottom-nav a[aria-current="true"]::before{transform:scaleX(1)}
+.bottom-nav a[aria-current="true"] .ic{color:var(--accent-2)}
+@media(min-width:960px){.bottom-nav{display:none}body{padding-bottom:0}}
+
+/* ---------- hero ---------- */
+.hero{position:relative;overflow:hidden;min-height:calc(100svh - var(--top-h));display:flex;align-items:center;padding:36px 0 56px}
+.hero-bg{position:absolute;inset:0;pointer-events:none;
+  -webkit-mask-image:radial-gradient(ellipse 80% 70% at 30% 40%,#000 30%,transparent 80%);mask-image:radial-gradient(ellipse 80% 70% at 30% 40%,#000 30%,transparent 80%)}
+.grid-drift{position:absolute;inset:-48px;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:48px 48px;opacity:.55;animation:drift 60s linear infinite}
+.hero::after{content:"";position:absolute;left:-10%;top:-20%;width:70%;height:80%;background:radial-gradient(closest-side,rgba(216,30,63,.16),transparent);pointer-events:none}
+.hero-year{position:absolute;right:-3%;top:2%;font:400 clamp(9rem,42vw,30rem)/.8 var(--f-display);color:transparent;-webkit-text-stroke:1px rgba(216,30,63,.42);letter-spacing:.02em;user-select:none;pointer-events:none;opacity:.9}
+.hero-inner{position:relative;z-index:1;width:100%;min-width:0}
+.hero-grid>*{min-width:0}
+.hero-meta{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;color:var(--dim);padding-bottom:14px;border-bottom:1px solid var(--line)}
+.hero-meta b{color:var(--gold);font-weight:500}
+.badge{display:inline-flex;align-items:center;gap:8px;min-height:26px;padding:0 10px;border:1px solid var(--accent);background:var(--accent-soft);color:var(--text);border-radius:2px}
+.badge .dot{width:6px;height:6px;border-radius:50%;background:var(--accent-2);animation:pulse 2.4s ease-in-out infinite}
+.badge.ghost{border-color:var(--line-2);background:transparent;color:var(--dim)}
+.hero-grid{display:grid;gap:36px;margin-top:clamp(28px,6vw,64px)}
+.tag-row{display:flex;align-items:center;gap:14px;color:var(--dim)}
+.tagbox{display:inline-flex;align-items:center;justify-content:center;min-width:68px;height:42px;padding:0 14px;border:1px solid var(--accent);background:var(--accent-soft);font:400 1.55rem/1 var(--f-display);letter-spacing:.14em}
+.hero-title{margin-top:20px;font-family:var(--f-display);font-weight:400;line-height:.9;text-transform:uppercase;letter-spacing:.005em;overflow-wrap:break-word;font-size:clamp(2.8rem,12.4vw,8.6rem)}
+.hero-grid>div:first-child{container-type:inline-size}
+@supports(font-size:1cqw){.hero-title{font-size:clamp(2.8rem,min(14.5cqw,12.4vw),9.5rem)}}
+.hero-title span{display:block}
+.hero-sub{margin-top:26px;display:flex;align-items:center;gap:14px;color:var(--text);letter-spacing:.24em;font-size:.8rem}
+.hero-sub::before{content:"";width:44px;height:1px;background:var(--accent)}
+.hero-founded{margin-top:10px;color:var(--gold)}
+.hero-text .lead{font-size:clamp(1.15rem,3.2vw,1.45rem);line-height:1.45;color:var(--text);font-weight:500;max-width:34ch;padding-left:18px;border-left:2px solid var(--accent)}
+.hero-text .body{margin-top:20px;color:var(--dim);max-width:52ch}
+.hero-line{position:relative;margin-top:clamp(36px,6vw,56px)}
+.hl-top{display:flex;align-items:center;gap:14px}
+.hl-mark{width:12px;height:12px;flex:none;background:var(--accent);transform:rotate(45deg);box-shadow:0 0 0 4px var(--accent-soft),0 0 18px var(--accent-glow)}
+.hl-rule{position:relative;flex:1;height:1px;overflow:hidden;background:linear-gradient(90deg,var(--accent),rgba(255,255,255,.28) 30%,transparent);transform-origin:left;animation:draw 1.8s .6s both cubic-bezier(.2,.7,.2,1)}
+.hl-rule::after{content:"";position:absolute;top:0;left:0;width:90px;height:1px;background:linear-gradient(90deg,transparent,#fff,transparent);animation:glint 7s 2.6s linear infinite}
+.hl-ticks{height:7px;margin:5px 0 0 26px;background:repeating-linear-gradient(90deg,var(--line-2) 0 1px,transparent 1px 22px);-webkit-mask-image:linear-gradient(90deg,#000,transparent 85%);mask-image:linear-gradient(90deg,#000,transparent 85%)}
+.hl-label{margin:14px 0 0 26px;color:var(--dim)}
+.hero-tagline{margin-top:28px;font:400 clamp(1.5rem,5vw,2.6rem)/1.08 var(--f-display);text-transform:uppercase;letter-spacing:.02em}
+.hero-tagline span{display:block}
+.hero-tagline span+span{color:var(--dim)}
+.reg{position:absolute;width:18px;height:18px;z-index:1;pointer-events:none;opacity:.55;background:linear-gradient(var(--line-2),var(--line-2)) center/1px 100% no-repeat,linear-gradient(var(--line-2),var(--line-2)) center/100% 1px no-repeat}
+.reg.a{left:10px;top:12px}.reg.b{right:10px;bottom:16px}
+[data-in]{animation:rise .8s var(--d,0s) both cubic-bezier(.2,.7,.2,1)}
+@media(min-width:960px){
+  .hero-grid{grid-template-columns:1.3fr 1fr;align-items:end;gap:72px}
+}
+
+/* ---------- section scaffolding ---------- */
+.sec{position:relative;padding:clamp(56px,9vw,116px) 0;border-top:1px solid var(--line);scroll-margin-top:var(--top-h)}
+.sec-head .sec-no{display:flex;align-items:center;gap:12px;color:var(--gold)}
+.sec-head .sec-no::after{content:"";width:48px;height:1px;background:var(--accent)}
+.sec-head h2{margin:16px 0 12px;font:400 clamp(2.3rem,6.5vw,3.8rem)/.95 var(--f-display);text-transform:uppercase;letter-spacing:.01em}
+.sec-head>p:last-child{color:var(--dim);max-width:36ch}
+.sec-head.wide>p:last-child{max-width:62ch}
+.split{display:grid;gap:36px}
+@media(min-width:960px){
+  .split{grid-template-columns:290px 1fr;gap:72px}
+  .split>.sec-head{position:sticky;top:calc(var(--top-h) + 32px);align-self:start}
+}
+.grid-bg{background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:40px 40px}
+.flash{outline:2px solid var(--accent);outline-offset:6px;animation:flash 1.6s ease-out 1}
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+
+/* ---------- overview ---------- */
+.ov{display:grid;gap:40px;margin-top:40px}
+@media(min-width:900px){.ov{grid-template-columns:1.55fr 1fr;gap:64px;align-items:start}}
+.sheet{border-top:1px solid var(--line-2)}
+.sheet .row{display:grid;grid-template-columns:112px 1fr;gap:16px;padding:15px 0;border-bottom:1px solid var(--line)}
+.sheet dt{color:var(--dim);padding-top:3px}
+.sheet dd{font-size:1.05rem;font-weight:500}
+@media(min-width:600px){.sheet .row{grid-template-columns:190px 1fr}}
+.idcard{position:relative;overflow:hidden;padding:24px;border:1px solid var(--line-2);border-radius:4px;background:linear-gradient(160deg,var(--surface),var(--bg-soft))}
+.idcard::before{content:"";position:absolute;inset:0;opacity:.5;pointer-events:none;background-image:repeating-linear-gradient(135deg,transparent 0 10px,rgba(255,255,255,.02) 10px 11px)}
+.idc-top{position:relative;display:flex;justify-content:space-between;color:var(--dim);padding-bottom:12px;border-bottom:1px dashed var(--line-2)}
+.idc-id{position:relative;margin:18px 0 14px;font:400 clamp(2rem,6vw,2.6rem)/1 var(--f-display);letter-spacing:.06em}
+.barcode{position:relative;display:block;width:100%;height:30px;color:var(--text);opacity:.8}
+.idc-meta{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:22px}
+.idc-meta dt{color:var(--faint)}
+.idc-meta dd{margin-top:4px;font:500 1.05rem var(--f-mono);letter-spacing:.06em}
+.stamp{position:absolute;right:-14px;bottom:-18px;width:132px;height:132px;color:var(--accent-2);opacity:.85;transform:rotate(-14deg);pointer-events:none}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));margin-top:56px;border-top:1px solid var(--line-2)}
+.stat{padding:22px 16px 6px 0}
+.stat+.stat{padding-left:20px;border-left:1px solid var(--line)}
+.stat .num{display:block;font:400 clamp(3rem,8vw,4.8rem)/1 var(--f-display);letter-spacing:.01em}
+.stat .lbl{display:block;margin-top:8px;color:var(--dim)}
+.stats-note{margin-top:18px;color:var(--faint)}
+@media(max-width:559px){.stat:nth-child(odd){border-left:0;padding-left:0}.stat:nth-child(n+3){border-top:1px solid var(--line)}}
+
+/* ---------- history timeline ---------- */
+.tl{position:relative}
+.tl::before{content:"";position:absolute;left:19px;top:14px;bottom:14px;width:1px;background:linear-gradient(var(--accent),var(--line-2) 35%,var(--line-2))}
+.ev{position:relative;padding:0 0 46px 62px;scroll-margin-top:calc(var(--top-h) + 20px)}
+.ev:last-child{padding-bottom:0}
+.ev-marker{position:absolute;left:3px;top:3px;width:32px;height:32px;display:grid;place-items:center;border:1px solid var(--accent);background:var(--bg);transform:rotate(45deg);box-shadow:0 0 0 4px var(--bg)}
+.ev-marker span{transform:rotate(-45deg);font:600 .72rem var(--f-mono);color:var(--accent-2)}
+.ev-top{display:flex;flex-wrap:wrap;gap:6px 16px;color:var(--gold);padding-top:8px}
+.ev-type{color:var(--dim)}
+.ev h3{margin:10px 0 8px;font:400 clamp(1.6rem,4.5vw,2.2rem)/1.05 var(--f-display);text-transform:uppercase;letter-spacing:.015em}
+.ev-desc{color:var(--dim);max-width:60ch}
+.ev-code{margin-top:14px;color:var(--faint)}
+
+/* ---------- eras ---------- */
+.era{position:relative;overflow:hidden;display:grid;gap:26px;padding:clamp(24px,5vw,48px);border:1px solid var(--line-2);background:linear-gradient(120deg,var(--surface),var(--bg-soft) 70%);scroll-margin-top:calc(var(--top-h) + 20px)}
+.era+.era{margin-top:24px}
+.era-numeral{position:absolute;right:2%;top:-8%;font:400 clamp(11rem,34vw,26rem)/1 var(--f-display);color:transparent;-webkit-text-stroke:1px rgba(216,30,63,.35);pointer-events:none;user-select:none}
+.era-main{position:relative}
+.era-chapter{color:var(--gold)}
+.era h3{margin:14px 0 6px;font:400 clamp(2.2rem,7vw,4rem)/.95 var(--f-display);text-transform:uppercase}
+.era h3 small{display:block;margin-top:8px;font:400 clamp(1.2rem,3.4vw,1.8rem)/1.1 var(--f-display);color:var(--dim);letter-spacing:.04em}
+.era-date{color:var(--dim)}
+.era-cols{position:relative;display:grid;gap:30px;margin-top:8px}
+@media(min-width:760px){.era-cols{grid-template-columns:1.2fr 1fr;gap:56px;max-width:860px}}
+.era h4{font:600 .7rem var(--f-mono);letter-spacing:.16em;text-transform:uppercase;color:var(--gold);padding-bottom:10px;border-bottom:1px solid var(--line-2)}
+.leaders li{display:flex;align-items:baseline;gap:10px;padding:11px 0}
+.leaders li span:first-child{white-space:nowrap}
+.leaders li::after{content:"";order:1;flex:1;border-bottom:1px dotted var(--line-2);transform:translateY(-4px)}
+.leaders li span:last-child{order:2;color:var(--dim);text-align:right}
+.era-end{margin-top:26px;color:var(--faint);display:flex;align-items:center;gap:14px}
+.era-end::before{content:"";width:32px;height:1px;background:var(--line-2)}
+
+/* ---------- roster cards ---------- */
+.cards{display:grid;gap:14px;margin-top:44px;grid-template-columns:repeat(auto-fit,minmax(215px,1fr))}
+.pcard{position:relative;display:flex;flex-direction:column;padding:20px;border:1px solid var(--line);border-radius:4px;background:var(--surface);transition:transform .25s cubic-bezier(.2,.7,.2,1),border-color .25s,box-shadow .25s}
+.pcard:hover{transform:translateY(-4px);border-color:rgba(216,30,63,.55);box-shadow:0 14px 30px -14px rgba(0,0,0,.8)}
+.pcard.lead{border-color:rgba(216,30,63,.6);background:linear-gradient(180deg,var(--accent-soft),var(--surface) 55%)}
+.pc-top{display:flex;justify-content:space-between;gap:8px;color:var(--faint)}
+.av{width:88px;height:88px;margin:18px 0 14px}
+.av path{fill:var(--surface-2);stroke:var(--line-2);stroke-width:1.5}
+.pcard.lead .av path{stroke:var(--accent);fill:rgba(216,30,63,.12)}
+.av .ini{font:400 40px var(--f-display);fill:var(--text)}
+.av .code{font:500 8.5px var(--f-mono);letter-spacing:.14em;fill:var(--dim)}
+.pcard h3{font:400 1.8rem/1 var(--f-display);text-transform:uppercase;letter-spacing:.02em}
+.pc-role{margin-top:6px;color:var(--gold)}
+.badges{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px;min-height:26px}
+.tagchip{display:inline-flex;align-items:center;min-height:24px;padding:0 9px;border:1px solid var(--accent);background:var(--accent-soft);border-radius:2px;color:var(--text)}
+.pc-dl{margin-top:16px;padding-top:6px;border-top:1px solid var(--line)}
+.pc-dl div{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px solid var(--line);font-size:.86rem}
+.pc-dl dt{color:var(--faint);font:500 .66rem/1.7 var(--f-mono);letter-spacing:.1em;text-transform:uppercase}
+.pc-dl dd{text-align:right}
+.pc-open{margin-top:auto;display:flex;align-items:center;justify-content:space-between;min-height:44px;padding-top:12px;background:none;border:0;border-top:0;color:var(--dim);font:600 .74rem var(--f-body);letter-spacing:.08em;text-transform:uppercase;text-align:left}
+.pc-open:hover{color:var(--accent-2)}
+
+/* ---------- role map ---------- */
+.rm-grid{display:grid;gap:28px}
+@media(min-width:1180px){.rm-grid{grid-template-columns:1.15fr 1fr;align-items:start}}
+.era-tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.rmap{position:relative;width:100%;max-width:560px;aspect-ratio:1/1.08;border:1px solid var(--line-2);background:var(--bg-soft);margin:0 auto;overflow:hidden}
+.rmap-svg{position:absolute;inset:0;width:100%;height:100%}
+.rmap-svg .frame{fill:none;stroke:var(--line);stroke-width:1;vector-effect:non-scaling-stroke}
+.rmap-svg .kite{fill:rgba(216,30,63,.05);stroke:rgba(216,30,63,.55);stroke-width:1;vector-effect:non-scaling-stroke}
+.rmap-svg .axis{stroke:var(--line-2);stroke-width:1;stroke-dasharray:4 5;vector-effect:non-scaling-stroke}
+.node{position:absolute;transform:translate(-50%,-50%);display:flex;flex-direction:column;align-items:center;gap:3px;text-align:center;min-width:84px;padding:6px}
+.n-dot{width:14px;height:14px;background:var(--bg);border:2px solid var(--accent);transform:rotate(45deg);box-shadow:0 0 0 4px var(--accent-soft)}
+.node.empty .n-dot{border-color:var(--faint);box-shadow:none}
+.n-role{margin-top:6px;color:var(--gold);font-size:.62rem}
+.n-name{font:400 clamp(1rem,3.6vw,1.35rem)/1.05 var(--f-display);text-transform:uppercase;letter-spacing:.03em}
+.node.empty .n-name{font:400 .68rem/1.3 var(--f-body);color:var(--faint);text-transform:none;max-width:90px}
+.rtable{width:100%;border-collapse:collapse}
+.rtable th,.rtable td{padding:14px 0;border-bottom:1px solid var(--line);text-align:left;vertical-align:baseline}
+.rtable thead th{color:var(--faint);border-bottom-color:var(--line-2)}
+.rtable tbody th{font-weight:400;color:var(--gold);width:44%}
+.rtable td{font-size:1.05rem;font-weight:500}
+
+/* ---------- leadership ---------- */
+.band{background:linear-gradient(180deg,var(--bg-soft),var(--bg));}
+.lead-grid{display:grid;gap:0;margin-top:44px;border-top:1px solid var(--line-2)}
+@media(min-width:760px){.lead-grid{grid-template-columns:repeat(2,1fr)}.lead-col+.lead-col{border-left:1px solid var(--line-2);padding-left:48px}.lead-col{padding-right:48px}}
+.lead-col{padding:28px 0;border-bottom:1px solid var(--line)}
+.lead-col .role{color:var(--gold)}
+.lead-ent{margin-top:14px}
+.lead-ent+.lead-ent{padding-top:16px;border-top:1px dashed var(--line-2)}
+.lead-name{font:400 clamp(3rem,10vw,5.6rem)/.95 var(--f-display);text-transform:uppercase;letter-spacing:.01em}
+.lead-meta{margin-top:8px;color:var(--dim)}
+.lead-note{margin-top:40px;max-width:66ch;font-size:clamp(1.1rem,2.8vw,1.35rem);line-height:1.5;padding-left:20px;border-left:2px solid var(--accent)}
+
+/* ---------- player database ---------- */
+.db{margin-top:44px;display:grid;border:1px solid var(--line-2);background:var(--surface)}
+@media(min-width:900px){.db{grid-template-columns:minmax(320px,390px) 1fr}}
+.db-list{border-bottom:1px solid var(--line-2)}
+@media(min-width:900px){.db-list{border-bottom:0;border-right:1px solid var(--line-2)}}
+.db-h{display:grid;grid-template-columns:78px 1fr auto;gap:12px;padding:12px 16px;color:var(--faint);border-bottom:1px solid var(--line-2);background:var(--bg-soft)}
+.db-row{width:100%;display:grid;grid-template-columns:78px 1fr auto;gap:12px;align-items:center;min-height:58px;padding:8px 16px;background:transparent;border:0;border-bottom:1px solid var(--line);text-align:left;transition:background .2s}
+.db-row:hover{background:var(--surface-2)}
+.db-row[aria-pressed="true"]{background:var(--accent-soft);box-shadow:inset 3px 0 0 var(--accent)}
+.c-id{font:500 .68rem var(--f-mono);letter-spacing:.06em;color:var(--dim)}
+.c-name{font:400 1.2rem/1.1 var(--f-display);text-transform:uppercase;letter-spacing:.03em}
+.c-role{font-size:.8rem;color:var(--dim)}
+.db-detail{padding:clamp(22px,4vw,40px);min-width:0;animation:rise .45s both cubic-bezier(.2,.7,.2,1)}
+.dd-top{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;color:var(--gold);padding-bottom:14px;border-bottom:1px solid var(--line-2)}
+.dd-name{margin:22px 0 12px;font:400 clamp(2.6rem,8vw,4.6rem)/.92 var(--f-display);text-transform:uppercase;letter-spacing:.01em}
+.dd-dl{display:grid;margin-top:26px;border-top:1px solid var(--line-2)}
+@media(min-width:640px){.dd-dl{grid-template-columns:1fr 1fr;column-gap:36px}}
+.dd-dl div{padding:14px 0;border-bottom:1px solid var(--line)}
+.dd-dl dt{color:var(--faint)}
+.dd-dl dd{margin-top:5px;font-weight:500}
+.dd-dl dd.na{color:var(--faint);font-weight:400;font-style:italic}
+.dd-refs{margin-top:26px}
+.dd-refs h4{color:var(--gold);margin-bottom:8px}
+.ref{display:flex;align-items:center;gap:12px;width:100%;min-height:44px;padding:8px 0;background:none;border:0;border-bottom:1px solid var(--line);text-align:left;color:var(--text)}
+.ref:hover{color:var(--accent-2)}
+.ref .mono{color:var(--dim);min-width:92px}
+
+/* ---------- visual timeline tree ---------- */
+.tree{margin-bottom:32px}
+.tree ul{position:relative;margin:0;padding-left:28px}
+.tree li{position:relative;padding:7px 0 7px 26px}
+.tree li::before{content:"";position:absolute;left:0;top:0;bottom:0;border-left:1px solid var(--line-2)}
+.tree li:last-child::before{bottom:auto;height:25px}
+.tree li::after{content:"";position:absolute;left:0;top:25px;width:18px;border-top:1px solid var(--line-2)}
+.tree ul ul{padding-left:22px}
+.t-node{display:inline-flex;align-items:center;min-height:36px;padding:0 14px;border:1px solid var(--line-2);background:var(--surface);color:var(--text);border-radius:2px;transition:border-color .2s,background .2s}
+button.t-node:hover{border-color:var(--accent);background:var(--accent-soft)}
+.t-node.root{border-color:var(--accent);background:var(--accent-soft);min-height:40px}
+.t-node.leaf{font:500 .85rem var(--f-body);letter-spacing:0;text-transform:none;color:var(--dim)}
+.tree .t-node.mono{font-size:.7rem}
+
+/* ---------- archive status ---------- */
+.stl{display:grid;gap:0;margin-top:40px;border-top:1px solid var(--line-2)}
+@media(min-width:900px){.stl{display:block;column-count:2;column-gap:64px}.st{break-inside:avoid}}
+.st{display:flex;align-items:center;gap:14px;min-height:64px;padding:12px 0;border-bottom:1px solid var(--line)}
+.st-ic{width:34px;height:34px;flex:none;display:grid;place-items:center;border-radius:50%}
+.st.rec .st-ic{background:var(--accent);color:#fff}
+.st.nrec .st-ic{border:1px dashed var(--faint);color:var(--faint)}
+.st-l{flex:1;min-width:0}
+.st-l .k{display:block;font:600 .8rem var(--f-body);letter-spacing:.1em;text-transform:uppercase}
+.st.nrec .st-l .k{color:var(--dim)}
+.st-l .n{display:block;margin-top:2px;font-size:.78rem;color:var(--faint)}
+.st-v{font:600 .68rem var(--f-mono);letter-spacing:.1em;text-transform:uppercase;text-align:right}
+.st.rec .st-v{color:var(--accent-2)}
+.st.nrec .st-v{color:var(--faint)}
+.st-note{display:flex;gap:14px;margin-top:32px;padding:18px 20px;border:1px solid var(--gold-soft);border-left:2px solid var(--gold);background:var(--gold-soft);max-width:720px;color:var(--text);font-size:.92rem}
+.st-count{margin-top:18px;color:var(--dim)}
+.maint{display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px;margin-top:56px;padding-top:22px;border-top:1px dashed var(--line-2);color:var(--faint);font-size:.82rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:44px;padding:0 18px;border:1px solid var(--line-2);border-radius:3px;background:transparent;color:var(--text);font:600 .76rem var(--f-body);letter-spacing:.08em;text-transform:uppercase;transition:border-color .2s,background .2s}
+.btn:hover{border-color:var(--accent);background:var(--accent-soft)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn.primary:hover{background:#e6274b}
+.btn.danger:hover{border-color:#ff6b85;background:rgba(255,107,133,.1)}
+.btn.sm{min-height:44px;padding:0 14px}
+.btn.on{border-color:var(--accent);background:var(--accent-soft)}
+
+/* ---------- join / recruitment ---------- */
+.join-view{margin-top:40px;max-width:640px}
+.jf-lead{margin-top:22px;font-size:clamp(1.02rem,2.6vw,1.22rem);line-height:1.55;color:var(--text);max-width:56ch;padding-left:18px;border-left:2px solid var(--accent)}
+.qr-card{position:relative;display:flex;flex-direction:column;align-items:center;gap:16px;max-width:320px;margin:40px auto 0;padding:26px 22px;border:1px solid var(--line-2);border-radius:6px;background:linear-gradient(160deg,var(--surface),var(--bg-soft))}
+.qr-card[data-in]{animation:rise .7s .1s both cubic-bezier(.2,.7,.2,1)}
+.qr-svg{width:100%;max-width:220px;height:auto;border-radius:4px}
+.qr-scan{font:600 .78rem var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--text)}
+.join-fallback{display:flex;justify-content:center;margin-top:32px}
+.step-ind{display:inline-flex;align-items:center;gap:10px}
+.step-ind::before{content:"";width:26px;height:1px;background:var(--accent)}
+.jf-h4{margin:30px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line-2);font:600 .72rem var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.jf-h4:first-child{margin-top:0}
+.fld .err{display:block;min-height:1.05em;margin-top:6px;color:var(--accent-2);font-size:.78rem}
+.fld [aria-invalid="true"]{border-color:var(--accent-2)}
+.jf-check{display:flex;align-items:flex-start;gap:12px;margin:28px 0 6px;padding:16px;border:1px solid var(--line-2);border-radius:3px;background:var(--surface)}
+.jf-check input{width:20px;height:20px;flex:none;margin-top:2px;accent-color:var(--accent)}
+.jf-check label{font-size:.9rem}
+.btn.loading{position:relative;color:transparent!important;pointer-events:none}
+.btn.loading::after{content:"";position:absolute;width:16px;height:16px;border:2px solid rgba(255,255,255,.4);border-top-color:#fff;border-radius:50%;animation:spin .7s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.rc-wrap{margin:28px auto 0;max-width:320px;border:1px solid var(--line-2);border-radius:6px;overflow:hidden;background:var(--bg-soft);animation:rise .5s both cubic-bezier(.2,.7,.2,1)}
+.rc-wrap canvas{display:block;width:100%;height:auto}
+.rc-actions{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:20px}
+.next-step{margin-top:52px;padding-top:30px;border-top:1px solid var(--line-2)}
+.wa-actions{display:flex;flex-direction:column;gap:12px;align-items:center;margin-top:18px}
+.btn.block{width:100%;max-width:400px}
+.btn[aria-disabled="true"]{opacity:.5;cursor:not-allowed}
+@media(prefers-reduced-motion:reduce){.btn.loading::after{animation:none}}
+
+/* ---------- footer ---------- */
+.footer{padding:56px 0 40px;border-top:1px solid var(--line-2);background:var(--bg-soft)}
+.f-grid{display:grid;gap:30px}
+@media(min-width:800px){.f-grid{grid-template-columns:1.4fr 1fr;align-items:end}}
+.f-name{font:400 clamp(2.4rem,7vw,4.2rem)/.95 var(--f-display);text-transform:uppercase}
+.f-tag{display:inline-block;margin-top:10px;padding:4px 12px;border:1px solid var(--accent);background:var(--accent-soft);font:400 1.2rem var(--f-display);letter-spacing:.14em}
+.f-meta p{padding:9px 0;border-bottom:1px solid var(--line);color:var(--dim)}
+.f-meta p b{color:var(--text);font-weight:500}
+.f-disc{margin-top:34px;padding-top:18px;border-top:1px solid var(--line);color:var(--faint);font-size:.82rem;max-width:70ch}
+
+/* ---------- dialogs ---------- */
+dialog{padding:0;max-width:none;border:1px solid var(--line-2);background:var(--bg-soft);color:var(--text);border-radius:4px;box-shadow:0 40px 80px -20px rgba(0,0,0,.9)}
+dialog::backdrop{background:rgba(5,4,6,.82)}
+dialog[open]{display:flex;flex-direction:column}
+#searchDlg{width:min(720px,calc(100% - 24px));height:min(680px,calc(100dvh - 16vh));margin:8vh auto auto}
+#editorDlg{width:min(760px,calc(100% - 24px));height:min(760px,calc(100dvh - 8vh));margin:auto}
+@media(max-width:700px){
+  #searchDlg,#editorDlg{width:100%;height:100dvh;max-height:none;margin:0;border:0;border-radius:0}
+}
+.dlg-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px 14px 20px;border-bottom:1px solid var(--line)}
+.dlg-head h2{font:400 1.4rem/1 var(--f-display);text-transform:uppercase;letter-spacing:.04em}
+.icon-btn{width:44px;height:44px;display:grid;place-items:center;border:1px solid var(--line-2);background:transparent;border-radius:3px;color:var(--text)}
+.icon-btn:hover{border-color:var(--accent);background:var(--accent-soft)}
+.s-input{position:relative;margin:16px 20px 0;color:var(--dim)}
+.s-input .ic{position:absolute;left:14px;top:50%;transform:translateY(-50%)}
+.s-input input{width:100%;height:52px;padding:0 14px 0 44px;background:var(--surface);border:1px solid var(--line-2);border-radius:3px;color:var(--text);font:500 16px var(--f-body)}
+.s-input input:focus{border-color:var(--gold);outline:none}
+.s-input input::placeholder{color:var(--faint)}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:14px 20px 4px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;min-height:44px;padding:0 16px;border:1px solid var(--line-2);border-radius:999px;background:transparent;color:var(--dim);font:600 .74rem var(--f-body);letter-spacing:.06em;text-transform:uppercase;transition:all .2s}
+.chip:hover{color:var(--text);border-color:var(--text)}
+.chip[aria-pressed="true"]{background:var(--text);border-color:var(--text);color:var(--bg)}
+.s-count{padding:10px 20px 6px;color:var(--faint)}
+.s-res{flex:1;overflow-y:auto;padding:0 12px 16px;overscroll-behavior:contain}
+.s-res li{animation:rise .3s calc(var(--i,0) * 22ms) both ease-out}
+.res{display:flex;align-items:center;gap:14px;width:100%;min-height:60px;padding:10px 10px;background:none;border:0;border-bottom:1px solid var(--line);text-align:left;color:var(--text);transition:background .15s}
+.res:hover,.res:focus-visible{background:var(--surface-2)}
+.res-kind{flex:none;width:86px;padding:3px 0;text-align:center;border:1px solid var(--line-2);border-radius:2px;color:var(--gold);font-size:.6rem}
+.res-main{flex:1;min-width:0}
+.res-title{display:block;font-weight:600}
+.res-sub{display:block;margin-top:1px;font-size:.82rem;color:var(--dim);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+mark{background:var(--accent-soft);color:var(--text);border-bottom:1px solid var(--accent-2);padding:0 1px}
+.s-empty{padding:26px 10px;color:var(--dim)}
+.s-sugg{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.e-note{padding:12px 20px 0;color:var(--dim);font-size:.85rem}
+.e-tabs{display:flex;gap:8px;overflow-x:auto;padding:14px 20px 6px;scrollbar-width:none}
+.e-tabs::-webkit-scrollbar{display:none}
+.e-body{flex:1;overflow-y:auto;padding:14px 20px 24px;overscroll-behavior:contain}
+.e-msg{min-height:44px;padding:10px 20px;border-top:1px solid var(--line);color:var(--gold);font-size:.85rem}
+.fld{margin-bottom:16px}
+.fld label{display:block;margin-bottom:6px;font:600 .72rem var(--f-mono);letter-spacing:.1em;text-transform:uppercase;color:var(--dim)}
+.fld input,.fld select,.fld textarea{width:100%;min-height:46px;padding:10px 12px;background:var(--surface);border:1px solid var(--line-2);border-radius:3px;color:var(--text);font:400 16px var(--f-body);color-scheme:dark}
+.fld textarea{min-height:96px;resize:vertical}
+.fld input:focus,.fld select:focus,.fld textarea:focus{border-color:var(--gold);outline:none}
+.fld small{display:block;margin-top:5px;color:var(--faint);font-size:.78rem}
+.frow{display:grid;gap:0 16px}
+@media(min-width:560px){.frow{grid-template-columns:1fr 1fr}}
+.e-actions{display:flex;flex-wrap:wrap;gap:10px;margin:8px 0 22px}
+.e-list li{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:52px;padding:6px 0;border-bottom:1px solid var(--line);font-size:.9rem}
+.e-list li span{min-width:0;overflow:hidden;text-overflow:ellipsis}
+.e-h{margin:22px 0 8px;font:600 .72rem var(--f-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
+.sel-row{display:grid;grid-template-columns:1fr minmax(150px,200px);gap:12px;align-items:center;padding:8px 0;border-bottom:1px solid var(--line)}
+.sel-row label{font:600 .72rem var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--dim)}
+.sel-row select{min-height:44px;padding:0 10px;background:var(--surface);border:1px solid var(--line-2);border-radius:3px;color:var(--text);font:400 15px var(--f-body);color-scheme:dark}
+.toast{position:fixed;left:50%;bottom:calc(var(--bot-h) + env(safe-area-inset-bottom) + 14px);z-index:120;transform:translate(-50%,20px);opacity:0;pointer-events:none;max-width:calc(100% - 32px);padding:12px 18px;border:1px solid var(--gold);background:var(--surface);border-radius:3px;font-size:.88rem;transition:all .3s cubic-bezier(.2,.7,.2,1)}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+@media(min-width:960px){.toast{bottom:28px}}
+
+/* ---------- keyframes ---------- */
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes draw{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes glint{from{transform:translateX(-100px)}to{transform:translateX(120vw)}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+@keyframes drift{from{transform:translate3d(0,0,0)}to{transform:translate3d(48px,48px,0)}}
+@keyframes flash{0%{box-shadow:0 0 0 0 var(--accent-glow)}30%{box-shadow:0 0 0 10px var(--accent-glow)}100%{box-shadow:0 0 0 0 transparent}}
+
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001ms!important;animation-delay:0s!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
+  .hl-rule::after,.grid-drift{animation:none!important}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <div class="topbar-in">
+    <a class="brand" href="#top" aria-label="Tajud Dipenjaruy Archive — back to top" id="brand"></a>
+    <nav class="top-links" id="topLinks" aria-label="Primary"></nav>
+    <button class="s-btn" type="button" data-open-search aria-label="Search the archive">
+      <svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+      <span>Search</span><kbd aria-hidden="true">/</kbd>
+    </button>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+  <noscript><div class="wrap" style="padding:60px 20px"><p>Arsip ini membutuhkan JavaScript untuk menampilkan data squad.</p></div></noscript>
+  <section id="top" class="hero" data-sec="top" aria-labelledby="h-hero"></section>
+  <section id="overview" class="sec" data-sec="overview" aria-labelledby="h-overview"></section>
+  <section id="history" class="sec" data-sec="history" aria-labelledby="h-history"></section>
+  <section id="eras" class="sec band" data-sec="eras" aria-labelledby="h-eras"></section>
+  <section id="roster" class="sec" data-sec="roster" aria-labelledby="h-roster"></section>
+  <section id="rolemap" class="sec grid-bg" data-sec="rolemap" aria-labelledby="h-rolemap"></section>
+  <section id="leadership" class="sec band" data-sec="leadership" aria-labelledby="h-leadership"></section>
+  <section id="players" class="sec" data-sec="players" aria-labelledby="h-players"></section>
+  <section id="timeline" class="sec" data-sec="timeline" aria-labelledby="h-timeline"></section>
+  <section id="archive" class="sec" data-sec="archive" aria-labelledby="h-archive"></section>
+  <section id="join" class="sec" data-sec="join" aria-labelledby="h-join"></section>
+</main>
+
+<footer class="footer" id="footer"></footer>
+<nav class="bottom-nav" id="bottomNav" aria-label="Bottom navigation"></nav>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<!-- SEARCH -->
+<dialog id="searchDlg" aria-labelledby="sTitle">
+  <div class="dlg-head">
+    <h2 id="sTitle">Search the Archive</h2>
+    <button class="icon-btn" type="button" data-close aria-label="Close search"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  </div>
+  <div class="s-input">
+    <label for="q" class="sr">Search players, roles, events, years, eras</label>
+    <svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+    <input id="q" type="search" placeholder="Player, role, event, year, era…" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search">
+  </div>
+  <div class="chips" id="chips" role="group" aria-label="Filter results"></div>
+  <p class="s-count mono" id="sCount" aria-live="polite"></p>
+  <ul class="s-res" id="sRes"></ul>
+</dialog>
+
+<!-- EDITOR -->
+<dialog id="editorDlg" aria-labelledby="eTitle">
+  <div class="dlg-head">
+    <h2 id="eTitle">Archive Editor</h2>
+    <button class="icon-btn" type="button" data-close aria-label="Close editor"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  </div>
+  <p class="e-note">Perubahan hanya disimpan di perangkat ini (localStorage). Data resmi bawaan arsip tidak pernah ditimpa — editor hanya menambahkan catatan di atasnya.</p>
+  <div class="e-tabs" id="eTabs" role="group" aria-label="Editor sections"></div>
+  <div class="e-body" id="eBody"></div>
+  <p class="e-msg" id="eMsg" role="status" aria-live="polite"></p>
+</dialog>
+
+<script>
+/* qrcode-generator v2.0.4 — Kazuhiko Arase — MIT License — vendored for offline QR generation, no backend/API required */
+var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],f={},c=function(t,r){o=function(t){for(var r=new Array(t),e=0;e<t;e+=1){r[e]=new Array(t);for(var n=0;n<t;n+=1)r[e][n]=null}return r}(i=4*e+17),l(0,0),l(i-7,0),l(0,i-7),s(),h(),d(t,r),e>=7&&v(t),null==a&&(a=p(e,n,u)),w(a,r)},l=function(t,r){for(var e=-1;e<=7;e+=1)if(!(t+e<=-1||i<=t+e))for(var n=-1;n<=7;n+=1)r+n<=-1||i<=r+n||(o[t+e][r+n]=0<=e&&e<=6&&(0==n||6==n)||0<=n&&n<=6&&(0==e||6==e)||2<=e&&e<=4&&2<=n&&n<=4)},h=function(){for(var t=8;t<i-8;t+=1)null==o[t][6]&&(o[t][6]=t%2==0);for(var r=8;r<i-8;r+=1)null==o[6][r]&&(o[6][r]=r%2==0)},s=function(){for(var t=B.getPatternPosition(e),r=0;r<t.length;r+=1)for(var n=0;n<t.length;n+=1){var i=t[r],a=t[n];if(null==o[i][a])for(var u=-2;u<=2;u+=1)for(var f=-2;f<=2;f+=1)o[i+u][a+f]=-2==u||2==u||-2==f||2==f||0==u&&0==f}},v=function(t){for(var r=B.getBCHTypeNumber(e),n=0;n<18;n+=1){var a=!t&&1==(r>>n&1);o[Math.floor(n/3)][n%3+i-8-3]=a}for(n=0;n<18;n+=1){a=!t&&1==(r>>n&1);o[n%3+i-8-3][Math.floor(n/3)]=a}},d=function(t,r){for(var e=n<<3|r,a=B.getBCHTypeInfo(e),u=0;u<15;u+=1){var f=!t&&1==(a>>u&1);u<6?o[u][8]=f:u<8?o[u+1][8]=f:o[i-15+u][8]=f}for(u=0;u<15;u+=1){f=!t&&1==(a>>u&1);u<8?o[8][i-u-1]=f:u<9?o[8][15-u-1+1]=f:o[8][15-u-1]=f}o[i-8][8]=!t},w=function(t,r){for(var e=-1,n=i-1,a=7,u=0,f=B.getMaskFunction(r),c=i-1;c>0;c-=2)for(6==c&&(c-=1);;){for(var g=0;g<2;g+=1)if(null==o[n][c-g]){var l=!1;u<t.length&&(l=1==(t[u]>>>a&1)),f(n,c-g)&&(l=!l),o[n][c-g]=l,-1==(a-=1)&&(u+=1,a=7)}if((n+=e)<0||i<=n){n-=e,e=-e;break}}},p=function(t,r,e){for(var n=A.getRSBlocks(t,r),o=b(),i=0;i<e.length;i+=1){var a=e[i];o.put(a.getMode(),4),o.put(a.getLength(),B.getLengthInBits(a.getMode(),t)),a.write(o)}var u=0;for(i=0;i<n.length;i+=1)u+=n[i].dataCount;if(o.getLengthInBits()>8*u)throw"code length overflow. ("+o.getLengthInBits()+">"+8*u+")";for(o.getLengthInBits()+4<=8*u&&o.put(0,4);o.getLengthInBits()%8!=0;)o.putBit(!1);for(;!(o.getLengthInBits()>=8*u||(o.put(236,8),o.getLengthInBits()>=8*u));)o.put(17,8);return function(t,r){for(var e=0,n=0,o=0,i=new Array(r.length),a=new Array(r.length),u=0;u<r.length;u+=1){var f=r[u].dataCount,c=r[u].totalCount-f;n=Math.max(n,f),o=Math.max(o,c),i[u]=new Array(f);for(var g=0;g<i[u].length;g+=1)i[u][g]=255&t.getBuffer()[g+e];e+=f;var l=B.getErrorCorrectPolynomial(c),h=k(i[u],l.getLength()-1).mod(l);for(a[u]=new Array(l.getLength()-1),g=0;g<a[u].length;g+=1){var s=g+h.getLength()-a[u].length;a[u][g]=s>=0?h.getAt(s):0}}var v=0;for(g=0;g<r.length;g+=1)v+=r[g].totalCount;var d=new Array(v),w=0;for(g=0;g<n;g+=1)for(u=0;u<r.length;u+=1)g<i[u].length&&(d[w]=i[u][g],w+=1);for(g=0;g<o;g+=1)for(u=0;u<r.length;u+=1)g<a[u].length&&(d[w]=a[u][g],w+=1);return d}(o,n)};f.addData=function(t,r){var e=null;switch(r=r||"Byte"){case"Numeric":e=M(t);break;case"Alphanumeric":e=x(t);break;case"Byte":e=m(t);break;case"Kanji":e=L(t);break;default:throw"mode:"+r}u.push(e),a=null},f.isDark=function(t,r){if(t<0||i<=t||r<0||i<=r)throw t+","+r;return o[t][r]},f.getModuleCount=function(){return i},f.make=function(){if(e<1){for(var t=1;t<40;t++){for(var r=A.getRSBlocks(t,n),o=b(),i=0;i<u.length;i++){var a=u[i];o.put(a.getMode(),4),o.put(a.getLength(),B.getLengthInBits(a.getMode(),t)),a.write(o)}var g=0;for(i=0;i<r.length;i++)g+=r[i].dataCount;if(o.getLengthInBits()<=8*g)break}e=t}c(!1,function(){for(var t=0,r=0,e=0;e<8;e+=1){c(!0,e);var n=B.getLostPoint(f);(0==e||t>n)&&(t=n,r=e)}return r}())},f.createTableTag=function(t,r){t=t||2;var e="";e+='<table style="',e+=" border-width: 0px; border-style: none;",e+=" border-collapse: collapse;",e+=" padding: 0px; margin: "+(r=void 0===r?4*t:r)+"px;",e+='">',e+="<tbody>";for(var n=0;n<f.getModuleCount();n+=1){e+="<tr>";for(var o=0;o<f.getModuleCount();o+=1)e+='<td style="',e+=" border-width: 0px; border-style: none;",e+=" border-collapse: collapse;",e+=" padding: 0px; margin: 0px;",e+=" width: "+t+"px;",e+=" height: "+t+"px;",e+=" background-color: ",e+=f.isDark(n,o)?"#000000":"#ffffff",e+=";",e+='"/>';e+="</tr>"}return e+="</tbody>",e+="</table>"},f.createSvgTag=function(t,r,e,n){var o={};"object"==typeof arguments[0]&&(t=(o=arguments[0]).cellSize,r=o.margin,e=o.alt,n=o.title),t=t||2,r=void 0===r?4*t:r,(e="string"==typeof e?{text:e}:e||{}).text=e.text||null,e.id=e.text?e.id||"qrcode-description":null,(n="string"==typeof n?{text:n}:n||{}).text=n.text||null,n.id=n.text?n.id||"qrcode-title":null;var i,a,u,c,g=f.getModuleCount()*t+2*r,l="";for(c="l"+t+",0 0,"+t+" -"+t+",0 0,-"+t+"z ",l+='<svg version="1.1" xmlns="http://www.w3.org/2000/svg"',l+=o.scalable?"":' width="'+g+'px" height="'+g+'px"',l+=' viewBox="0 0 '+g+" "+g+'" ',l+=' preserveAspectRatio="xMinYMin meet"',l+=n.text||e.text?' role="img" aria-labelledby="'+y([n.id,e.id].join(" ").trim())+'"':"",l+=">",l+=n.text?'<title id="'+y(n.id)+'">'+y(n.text)+"</title>":"",l+=e.text?'<description id="'+y(e.id)+'">'+y(e.text)+"</description>":"",l+='<rect width="100%" height="100%" fill="white" cx="0" cy="0"/>',l+='<path d="',a=0;a<f.getModuleCount();a+=1)for(u=a*t+r,i=0;i<f.getModuleCount();i+=1)f.isDark(a,i)&&(l+="M"+(i*t+r)+","+u+c);return l+='" stroke="transparent" fill="black"/>',l+="</svg>"},f.createDataURL=function(t,r){t=t||2,r=void 0===r?4*t:r;var e=f.getModuleCount()*t+2*r,n=r,o=e-r;return I(e,e,function(r,e){if(n<=r&&r<o&&n<=e&&e<o){var i=Math.floor((r-n)/t),a=Math.floor((e-n)/t);return f.isDark(a,i)?0:1}return 1})},f.createImgTag=function(t,r,e){t=t||2,r=void 0===r?4*t:r;var n=f.getModuleCount()*t+2*r,o="";return o+="<img",o+=' src="',o+=f.createDataURL(t,r),o+='"',o+=' width="',o+=n,o+='"',o+=' height="',o+=n,o+='"',e&&(o+=' alt="',o+=y(e),o+='"'),o+="/>"};var y=function(t){for(var r="",e=0;e<t.length;e+=1){var n=t.charAt(e);switch(n){case"<":r+="&lt;";break;case">":r+="&gt;";break;case"&":r+="&amp;";break;case'"':r+="&quot;";break;default:r+=n}}return r};return f.createASCII=function(t,r){if((t=t||1)<2)return function(t){t=void 0===t?2:t;var r,e,n,o,i,a=1*f.getModuleCount()+2*t,u=t,c=a-t,g={"██":"█","█ ":"▀"," █":"▄","  ":" "},l={"██":"▀","█ ":"▀"," █":" ","  ":" "},h="";for(r=0;r<a;r+=2){for(n=Math.floor((r-u)/1),o=Math.floor((r+1-u)/1),e=0;e<a;e+=1)i="█",u<=e&&e<c&&u<=r&&r<c&&f.isDark(n,Math.floor((e-u)/1))&&(i=" "),u<=e&&e<c&&u<=r+1&&r+1<c&&f.isDark(o,Math.floor((e-u)/1))?i+=" ":i+="█",h+=t<1&&r+1>=c?l[i]:g[i];h+="\n"}return a%2&&t>0?h.substring(0,h.length-a-1)+Array(a+1).join("▀"):h.substring(0,h.length-1)}(r);t-=1,r=void 0===r?2*t:r;var e,n,o,i,a=f.getModuleCount()*t+2*r,u=r,c=a-r,g=Array(t+1).join("██"),l=Array(t+1).join("  "),h="",s="";for(e=0;e<a;e+=1){for(o=Math.floor((e-u)/t),s="",n=0;n<a;n+=1)i=1,u<=n&&n<c&&u<=e&&e<c&&f.isDark(o,Math.floor((n-u)/t))&&(i=0),s+=i?g:l;for(o=0;o<t;o+=1)h+=s+"\n"}return h.substring(0,h.length-1)},f.renderTo2dContext=function(t,r){r=r||2;for(var e=f.getModuleCount(),n=0;n<e;n++)for(var o=0;o<e;o++)t.fillStyle=f.isDark(n,o)?"black":"white",t.fillRect(o*r,n*r,r,r)},f};t.stringToBytes=(t.stringToBytesFuncs={default:function(t){for(var r=[],e=0;e<t.length;e+=1){var n=t.charCodeAt(e);r.push(255&n)}return r}}).default,t.createStringToBytes=function(t,r){var e=function(){for(var e=S(t),n=function(){var t=e.read();if(-1==t)throw"eof";return t},o=0,i={};;){var a=e.read();if(-1==a)break;var u=n(),f=n()<<8|n();i[String.fromCharCode(a<<8|u)]=f,o+=1}if(o!=r)throw o+" != "+r;return i}(),n="?".charCodeAt(0);return function(t){for(var r=[],o=0;o<t.length;o+=1){var i=t.charCodeAt(o);if(i<128)r.push(i);else{var a=e[t.charAt(o)];"number"==typeof a?(255&a)==a?r.push(a):(r.push(a>>>8),r.push(255&a)):r.push(n)}}return r}};var r,e,n,o,i,a=1,u=2,f=4,c=8,g={L:1,M:0,Q:3,H:2},l=0,h=1,s=2,v=3,d=4,w=5,p=6,y=7,B=(r=[[],[6,18],[6,22],[6,26],[6,30],[6,34],[6,22,38],[6,24,42],[6,26,46],[6,28,50],[6,30,54],[6,32,58],[6,34,62],[6,26,46,66],[6,26,48,70],[6,26,50,74],[6,30,54,78],[6,30,56,82],[6,30,58,86],[6,34,62,90],[6,28,50,72,94],[6,26,50,74,98],[6,30,54,78,102],[6,28,54,80,106],[6,32,58,84,110],[6,30,58,86,114],[6,34,62,90,118],[6,26,50,74,98,122],[6,30,54,78,102,126],[6,26,52,78,104,130],[6,30,56,82,108,134],[6,34,60,86,112,138],[6,30,58,86,114,142],[6,34,62,90,118,146],[6,30,54,78,102,126,150],[6,24,50,76,102,128,154],[6,28,54,80,106,132,158],[6,32,58,84,110,136,162],[6,26,54,82,110,138,166],[6,30,58,86,114,142,170]],e=1335,n=7973,i=function(t){for(var r=0;0!=t;)r+=1,t>>>=1;return r},(o={}).getBCHTypeInfo=function(t){for(var r=t<<10;i(r)-i(e)>=0;)r^=e<<i(r)-i(e);return 21522^(t<<10|r)},o.getBCHTypeNumber=function(t){for(var r=t<<12;i(r)-i(n)>=0;)r^=n<<i(r)-i(n);return t<<12|r},o.getPatternPosition=function(t){return r[t-1]},o.getMaskFunction=function(t){switch(t){case l:return function(t,r){return(t+r)%2==0};case h:return function(t,r){return t%2==0};case s:return function(t,r){return r%3==0};case v:return function(t,r){return(t+r)%3==0};case d:return function(t,r){return(Math.floor(t/2)+Math.floor(r/3))%2==0};case w:return function(t,r){return t*r%2+t*r%3==0};case p:return function(t,r){return(t*r%2+t*r%3)%2==0};case y:return function(t,r){return(t*r%3+(t+r)%2)%2==0};default:throw"bad maskPattern:"+t}},o.getErrorCorrectPolynomial=function(t){for(var r=k([1],0),e=0;e<t;e+=1)r=r.multiply(k([1,C.gexp(e)],0));return r},o.getLengthInBits=function(t,r){if(1<=r&&r<10)switch(t){case a:return 10;case u:return 9;case f:case c:return 8;default:throw"mode:"+t}else if(r<27)switch(t){case a:return 12;case u:return 11;case f:return 16;case c:return 10;default:throw"mode:"+t}else{if(!(r<41))throw"type:"+r;switch(t){case a:return 14;case u:return 13;case f:return 16;case c:return 12;default:throw"mode:"+t}}},o.getLostPoint=function(t){for(var r=t.getModuleCount(),e=0,n=0;n<r;n+=1)for(var o=0;o<r;o+=1){for(var i=0,a=t.isDark(n,o),u=-1;u<=1;u+=1)if(!(n+u<0||r<=n+u))for(var f=-1;f<=1;f+=1)o+f<0||r<=o+f||0==u&&0==f||a==t.isDark(n+u,o+f)&&(i+=1);i>5&&(e+=3+i-5)}for(n=0;n<r-1;n+=1)for(o=0;o<r-1;o+=1){var c=0;t.isDark(n,o)&&(c+=1),t.isDark(n+1,o)&&(c+=1),t.isDark(n,o+1)&&(c+=1),t.isDark(n+1,o+1)&&(c+=1),0!=c&&4!=c||(e+=3)}for(n=0;n<r;n+=1)for(o=0;o<r-6;o+=1)t.isDark(n,o)&&!t.isDark(n,o+1)&&t.isDark(n,o+2)&&t.isDark(n,o+3)&&t.isDark(n,o+4)&&!t.isDark(n,o+5)&&t.isDark(n,o+6)&&(e+=40);for(o=0;o<r;o+=1)for(n=0;n<r-6;n+=1)t.isDark(n,o)&&!t.isDark(n+1,o)&&t.isDark(n+2,o)&&t.isDark(n+3,o)&&t.isDark(n+4,o)&&!t.isDark(n+5,o)&&t.isDark(n+6,o)&&(e+=40);var g=0;for(o=0;o<r;o+=1)for(n=0;n<r;n+=1)t.isDark(n,o)&&(g+=1);return e+=Math.abs(100*g/r/r-50)/5*10},o),C=function(){for(var t=new Array(256),r=new Array(256),e=0;e<8;e+=1)t[e]=1<<e;for(e=8;e<256;e+=1)t[e]=t[e-4]^t[e-5]^t[e-6]^t[e-8];for(e=0;e<255;e+=1)r[t[e]]=e;var n={glog:function(t){if(t<1)throw"glog("+t+")";return r[t]},gexp:function(r){for(;r<0;)r+=255;for(;r>=256;)r-=255;return t[r]}};return n}();function k(t,r){if(void 0===t.length)throw t.length+"/"+r;var e=function(){for(var e=0;e<t.length&&0==t[e];)e+=1;for(var n=new Array(t.length-e+r),o=0;o<t.length-e;o+=1)n[o]=t[o+e];return n}(),n={getAt:function(t){return e[t]},getLength:function(){return e.length},multiply:function(t){for(var r=new Array(n.getLength()+t.getLength()-1),e=0;e<n.getLength();e+=1)for(var o=0;o<t.getLength();o+=1)r[e+o]^=C.gexp(C.glog(n.getAt(e))+C.glog(t.getAt(o)));return k(r,0)},mod:function(t){if(n.getLength()-t.getLength()<0)return n;for(var r=C.glog(n.getAt(0))-C.glog(t.getAt(0)),e=new Array(n.getLength()),o=0;o<n.getLength();o+=1)e[o]=n.getAt(o);for(o=0;o<t.getLength();o+=1)e[o]^=C.gexp(C.glog(t.getAt(o))+r);return k(e,0).mod(t)}};return n}var A=function(){var t=[[1,26,19],[1,26,16],[1,26,13],[1,26,9],[1,44,34],[1,44,28],[1,44,22],[1,44,16],[1,70,55],[1,70,44],[2,35,17],[2,35,13],[1,100,80],[2,50,32],[2,50,24],[4,25,9],[1,134,108],[2,67,43],[2,33,15,2,34,16],[2,33,11,2,34,12],[2,86,68],[4,43,27],[4,43,19],[4,43,15],[2,98,78],[4,49,31],[2,32,14,4,33,15],[4,39,13,1,40,14],[2,121,97],[2,60,38,2,61,39],[4,40,18,2,41,19],[4,40,14,2,41,15],[2,146,116],[3,58,36,2,59,37],[4,36,16,4,37,17],[4,36,12,4,37,13],[2,86,68,2,87,69],[4,69,43,1,70,44],[6,43,19,2,44,20],[6,43,15,2,44,16],[4,101,81],[1,80,50,4,81,51],[4,50,22,4,51,23],[3,36,12,8,37,13],[2,116,92,2,117,93],[6,58,36,2,59,37],[4,46,20,6,47,21],[7,42,14,4,43,15],[4,133,107],[8,59,37,1,60,38],[8,44,20,4,45,21],[12,33,11,4,34,12],[3,145,115,1,146,116],[4,64,40,5,65,41],[11,36,16,5,37,17],[11,36,12,5,37,13],[5,109,87,1,110,88],[5,65,41,5,66,42],[5,54,24,7,55,25],[11,36,12,7,37,13],[5,122,98,1,123,99],[7,73,45,3,74,46],[15,43,19,2,44,20],[3,45,15,13,46,16],[1,135,107,5,136,108],[10,74,46,1,75,47],[1,50,22,15,51,23],[2,42,14,17,43,15],[5,150,120,1,151,121],[9,69,43,4,70,44],[17,50,22,1,51,23],[2,42,14,19,43,15],[3,141,113,4,142,114],[3,70,44,11,71,45],[17,47,21,4,48,22],[9,39,13,16,40,14],[3,135,107,5,136,108],[3,67,41,13,68,42],[15,54,24,5,55,25],[15,43,15,10,44,16],[4,144,116,4,145,117],[17,68,42],[17,50,22,6,51,23],[19,46,16,6,47,17],[2,139,111,7,140,112],[17,74,46],[7,54,24,16,55,25],[34,37,13],[4,151,121,5,152,122],[4,75,47,14,76,48],[11,54,24,14,55,25],[16,45,15,14,46,16],[6,147,117,4,148,118],[6,73,45,14,74,46],[11,54,24,16,55,25],[30,46,16,2,47,17],[8,132,106,4,133,107],[8,75,47,13,76,48],[7,54,24,22,55,25],[22,45,15,13,46,16],[10,142,114,2,143,115],[19,74,46,4,75,47],[28,50,22,6,51,23],[33,46,16,4,47,17],[8,152,122,4,153,123],[22,73,45,3,74,46],[8,53,23,26,54,24],[12,45,15,28,46,16],[3,147,117,10,148,118],[3,73,45,23,74,46],[4,54,24,31,55,25],[11,45,15,31,46,16],[7,146,116,7,147,117],[21,73,45,7,74,46],[1,53,23,37,54,24],[19,45,15,26,46,16],[5,145,115,10,146,116],[19,75,47,10,76,48],[15,54,24,25,55,25],[23,45,15,25,46,16],[13,145,115,3,146,116],[2,74,46,29,75,47],[42,54,24,1,55,25],[23,45,15,28,46,16],[17,145,115],[10,74,46,23,75,47],[10,54,24,35,55,25],[19,45,15,35,46,16],[17,145,115,1,146,116],[14,74,46,21,75,47],[29,54,24,19,55,25],[11,45,15,46,46,16],[13,145,115,6,146,116],[14,74,46,23,75,47],[44,54,24,7,55,25],[59,46,16,1,47,17],[12,151,121,7,152,122],[12,75,47,26,76,48],[39,54,24,14,55,25],[22,45,15,41,46,16],[6,151,121,14,152,122],[6,75,47,34,76,48],[46,54,24,10,55,25],[2,45,15,64,46,16],[17,152,122,4,153,123],[29,74,46,14,75,47],[49,54,24,10,55,25],[24,45,15,46,46,16],[4,152,122,18,153,123],[13,74,46,32,75,47],[48,54,24,14,55,25],[42,45,15,32,46,16],[20,147,117,4,148,118],[40,75,47,7,76,48],[43,54,24,22,55,25],[10,45,15,67,46,16],[19,148,118,6,149,119],[18,75,47,31,76,48],[34,54,24,34,55,25],[20,45,15,61,46,16]],r=function(t,r){var e={};return e.totalCount=t,e.dataCount=r,e},e={};return e.getRSBlocks=function(e,n){var o=function(r,e){switch(e){case g.L:return t[4*(r-1)+0];case g.M:return t[4*(r-1)+1];case g.Q:return t[4*(r-1)+2];case g.H:return t[4*(r-1)+3];default:return}}(e,n);if(void 0===o)throw"bad rs block @ typeNumber:"+e+"/errorCorrectionLevel:"+n;for(var i=o.length/3,a=[],u=0;u<i;u+=1)for(var f=o[3*u+0],c=o[3*u+1],l=o[3*u+2],h=0;h<f;h+=1)a.push(r(c,l));return a},e}(),b=function(){var t=[],r=0,e={getBuffer:function(){return t},getAt:function(r){var e=Math.floor(r/8);return 1==(t[e]>>>7-r%8&1)},put:function(t,r){for(var n=0;n<r;n+=1)e.putBit(1==(t>>>r-n-1&1))},getLengthInBits:function(){return r},putBit:function(e){var n=Math.floor(r/8);t.length<=n&&t.push(0),e&&(t[n]|=128>>>r%8),r+=1}};return e},M=function(t){var r=a,e=t,n={getMode:function(){return r},getLength:function(t){return e.length},write:function(t){for(var r=e,n=0;n+2<r.length;)t.put(o(r.substring(n,n+3)),10),n+=3;n<r.length&&(r.length-n==1?t.put(o(r.substring(n,n+1)),4):r.length-n==2&&t.put(o(r.substring(n,n+2)),7))}},o=function(t){for(var r=0,e=0;e<t.length;e+=1)r=10*r+i(t.charAt(e));return r},i=function(t){if("0"<=t&&t<="9")return t.charCodeAt(0)-"0".charCodeAt(0);throw"illegal char :"+t};return n},x=function(t){var r=u,e=t,n={getMode:function(){return r},getLength:function(t){return e.length},write:function(t){for(var r=e,n=0;n+1<r.length;)t.put(45*o(r.charAt(n))+o(r.charAt(n+1)),11),n+=2;n<r.length&&t.put(o(r.charAt(n)),6)}},o=function(t){if("0"<=t&&t<="9")return t.charCodeAt(0)-"0".charCodeAt(0);if("A"<=t&&t<="Z")return t.charCodeAt(0)-"A".charCodeAt(0)+10;switch(t){case" ":return 36;case"$":return 37;case"%":return 38;case"*":return 39;case"+":return 40;case"-":return 41;case".":return 42;case"/":return 43;case":":return 44;default:throw"illegal char :"+t}};return n},m=function(r){var e=f,n=t.stringToBytes(r),o={getMode:function(){return e},getLength:function(t){return n.length},write:function(t){for(var r=0;r<n.length;r+=1)t.put(n[r],8)}};return o},L=function(r){var e=c,n=t.stringToBytesFuncs.SJIS;if(!n)throw"sjis not supported.";!function(){var t=n("友");if(2!=t.length||38726!=(t[0]<<8|t[1]))throw"sjis not supported."}();var o=n(r),i={getMode:function(){return e},getLength:function(t){return~~(o.length/2)},write:function(t){for(var r=o,e=0;e+1<r.length;){var n=(255&r[e])<<8|255&r[e+1];if(33088<=n&&n<=40956)n-=33088;else{if(!(57408<=n&&n<=60351))throw"illegal char at "+(e+1)+"/"+n;n-=49472}n=192*(n>>>8&255)+(255&n),t.put(n,13),e+=2}if(e<r.length)throw"illegal char at "+(e+1)}};return i},D=function(){var t=[],r={writeByte:function(r){t.push(255&r)},writeShort:function(t){r.writeByte(t),r.writeByte(t>>>8)},writeBytes:function(t,e,n){e=e||0,n=n||t.length;for(var o=0;o<n;o+=1)r.writeByte(t[o+e])},writeString:function(t){for(var e=0;e<t.length;e+=1)r.writeByte(t.charCodeAt(e))},toByteArray:function(){return t},toString:function(){var r="";r+="[";for(var e=0;e<t.length;e+=1)e>0&&(r+=","),r+=t[e];return r+="]"}};return r},S=function(t){var r=t,e=0,n=0,o=0,i={read:function(){for(;o<8;){if(e>=r.length){if(0==o)return-1;throw"unexpected end of file./"+o}var t=r.charAt(e);if(e+=1,"="==t)return o=0,-1;t.match(/^\s$/)||(n=n<<6|a(t.charCodeAt(0)),o+=6)}var i=n>>>o-8&255;return o-=8,i}},a=function(t){if(65<=t&&t<=90)return t-65;if(97<=t&&t<=122)return t-97+26;if(48<=t&&t<=57)return t-48+52;if(43==t)return 62;if(47==t)return 63;throw"c:"+t};return i},I=function(t,r,e){for(var n=function(t,r){var e=t,n=r,o=new Array(t*r),i={setPixel:function(t,r,n){o[r*e+t]=n},write:function(t){t.writeString("GIF87a"),t.writeShort(e),t.writeShort(n),t.writeByte(128),t.writeByte(0),t.writeByte(0),t.writeByte(0),t.writeByte(0),t.writeByte(0),t.writeByte(255),t.writeByte(255),t.writeByte(255),t.writeString(","),t.writeShort(0),t.writeShort(0),t.writeShort(e),t.writeShort(n),t.writeByte(0);var r=a(2);t.writeByte(2);for(var o=0;r.length-o>255;)t.writeByte(255),t.writeBytes(r,o,255),o+=255;t.writeByte(r.length-o),t.writeBytes(r,o,r.length-o),t.writeByte(0),t.writeString(";")}},a=function(t){for(var r=1<<t,e=1+(1<<t),n=t+1,i=u(),a=0;a<r;a+=1)i.add(String.fromCharCode(a));i.add(String.fromCharCode(r)),i.add(String.fromCharCode(e));var f,c,g,l=D(),h=(f=l,c=0,g=0,{write:function(t,r){if(t>>>r!=0)throw"length over";for(;c+r>=8;)f.writeByte(255&(t<<c|g)),r-=8-c,t>>>=8-c,g=0,c=0;g|=t<<c,c+=r},flush:function(){c>0&&f.writeByte(g)}});h.write(r,n);var s=0,v=String.fromCharCode(o[s]);for(s+=1;s<o.length;){var d=String.fromCharCode(o[s]);s+=1,i.contains(v+d)?v+=d:(h.write(i.indexOf(v),n),i.size()<4095&&(i.size()==1<<n&&(n+=1),i.add(v+d)),v=d)}return h.write(i.indexOf(v),n),h.write(e,n),h.flush(),l.toByteArray()},u=function(){var t={},r=0,e={add:function(n){if(e.contains(n))throw"dup key:"+n;t[n]=r,r+=1},size:function(){return r},indexOf:function(r){return t[r]},contains:function(r){return void 0!==t[r]}};return e};return i}(t,r),o=0;o<r;o+=1)for(var i=0;i<t;i+=1)n.setPixel(i,o,e(i,o));var a=D();n.write(a);for(var u=function(){var t=0,r=0,e=0,n="",o={},i=function(t){n+=String.fromCharCode(a(63&t))},a=function(t){if(t<0);else{if(t<26)return 65+t;if(t<52)return t-26+97;if(t<62)return t-52+48;if(62==t)return 43;if(63==t)return 47}throw"n:"+t};return o.writeByte=function(n){for(t=t<<8|255&n,r+=8,e+=1;r>=6;)i(t>>>r-6),r-=6},o.flush=function(){if(r>0&&(i(t<<6-r),t=0,r=0),e%3!=0)for(var o=3-e%3,a=0;a<o;a+=1)n+="="},o.toString=function(){return n},o}(),f=a.toByteArray(),c=0;c<f.length;c+=1)u.writeByte(f[c]);return u.flush(),"data:image/gif;base64,"+u};return t}();qrcode.stringToBytesFuncs["UTF-8"]=function(t){return function(t){for(var r=[],e=0;e<t.length;e++){var n=t.charCodeAt(e);n<128?r.push(n):n<2048?r.push(192|n>>6,128|63&n):n<55296||n>=57344?r.push(224|n>>12,128|n>>6&63,128|63&n):(e++,n=65536+((1023&n)<<10|1023&t.charCodeAt(e)),r.push(240|n>>18,128|n>>12&63,128|n>>6&63,128|63&n))}return r}(t)},function(t){"function"==typeof define&&define.amd?define([],t):"object"==typeof exports&&(module.exports=t())}(function(){return qrcode});
+</script>
+<script>
+(function(){
+'use strict';
+
+/* =========================================================
+   1. DATA UTAMA — satu-satunya sumber data awal.
+   Tambahan (roster baru, event, era, dst.) lewat Archive Editor
+   atau tambahkan langsung ke object ini.
+   ========================================================= */
+const squadData = {
+  name: "Tajud Dipenjaruy",
+  tag: "WS",
+  founded: "18 September 2026",
+  foundedISO: "2026-09-18",
+  founder: "Tajudin",
+  captain: "Tajudin",
+
+  archive: { id: "WS-2026-001", record: "001" },
+
+  roster: [
+    { name: "Fadil",   role: "EXP Lane", joined: "18 September 2026", classification: "Original Roster", status: "Recorded", eras: ["I"] },
+    { name: "Fauzi",   role: "Roam",      joined: "18 September 2026", classification: "Original Roster", status: "Recorded", eras: ["I"] },
+    { name: "Tajudin", role: "Jungler",   joined: "18 September 2026", classification: "Founder · Captain · Original Roster", status: "Recorded", eras: ["I"] },
+    { name: "Jurifky", role: "Mid Lane",  joined: "18 September 2026", classification: "Original Roster", status: "Recorded", eras: ["I"] },
+    { name: "Azhar",   role: "Gold Lane", joined: "18 September 2026", classification: "Original Roster", status: "Recorded", eras: ["I"] }
+  ],
+
+  eras: [
+    { uid: "I", title: "The Original Five", date: "18 September 2026", iso: "2026-09-18" }
+  ],
+
+  leadership: [
+    { title: "Founder", name: "Tajudin", from: "18 September 2026", era: "I" },
+    { title: "Captain", name: "Tajudin", from: "18 September 2026", era: "I" }
+  ],
+  leadershipNote: "Tajudin merupakan pendiri Tajud Dipenjaruy dan tercatat sebagai kapten sejak periode awal berdirinya squad.",
+
+  timeline: [
+    { id: "foundation", iso: "2026-09-18", date: "18 September 2026", type: "Foundation",
+      title: "Foundation", treeLabel: "FOUNDATION", era: "I",
+      description: "Tajud Dipenjaruy (WS) resmi didirikan oleh Tajudin." },
+    { id: "leadership", iso: "2026-09-18", date: "18 September 2026", type: "Leadership",
+      title: "Leadership Established", treeLabel: "FOUNDER & CAPTAIN", era: "I",
+      description: "Tajudin tercatat sebagai Founder sekaligus Captain." },
+    { id: "roster", iso: "2026-09-18", date: "18 September 2026", type: "Roster Formation",
+      title: "Original Roster Formed", treeLabel: "ORIGINAL FIVE", era: "I", rosterEra: "I",
+      description: "Fadil, Fauzi, Tajudin, Jurifky, dan Azhar tercatat sebagai roster perdana." }
+  ],
+
+  status: [
+    { key: "Foundation",        state: "recorded" },
+    { key: "Founder",           state: "recorded" },
+    { key: "Captain",           state: "recorded" },
+    { key: "Original Roster",   state: "recorded" },
+    { key: "Role Distribution", state: "recorded" },
+    { key: "Roster Changes",    state: "not-recorded" },
+    { key: "Achievements",      state: "not-recorded" },
+    { key: "Rebranding",        state: "not-recorded" },
+    { key: "Inactive Period",   state: "not-recorded" },
+    { key: "Disbandment",       state: "not-recorded" }
+  ]
+};
+
+/* Recruitment / Join WS — official WhatsApp group invite link.
+   Tambahkan link grup resmi di sini (mis. "https://chat.whatsapp.com/xxxxxxxx").
+   Selama masih kosong, tombol "Join Official Group" akan nonaktif. */
+const WA_GROUP_LINK = '';
+
+/* =========================================================
+   2. UTIL
+   ========================================================= */
+const NA = 'Belum tersedia dalam arsip';
+const NA_EN = 'Information not recorded';
+const MON = ['Januari','Februari','Maret','April','Mei','Juni','Juli','Agustus','September','Oktober','November','Desember'];
+const MON3 = ['JAN','FEB','MAR','APR','MEI','JUN','JUL','AGU','SEP','OKT','NOV','DES'];
+const NUM_ID = ['nol','satu','dua','tiga','empat','lima','enam','tujuh','delapan','sembilan','sepuluh'];
+const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+const $ = (s, r) => (r || document).querySelector(s);
+const $$ = (s, r) => Array.from((r || document).querySelectorAll(s));
+const esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const pad = (n, l) => String(n).padStart(l || 2, '0');
+const uid = () => 'x' + Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
+const isoOk = (v) => typeof v === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(v) && !isNaN(Date.parse(v));
+const fmtDate = (iso) => { const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso || ''); return m ? (+m[3]) + ' ' + MON[+m[2] - 1] + ' ' + m[1] : (iso || NA); };
+const fmtShort = (iso) => { const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso || ''); return m ? (+m[3]) + ' ' + MON3[+m[2] - 1] + ' ' + m[1] : (iso || ''); };
+const fmtDot = (iso) => { const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso || ''); return m ? m[3] + '.' + m[2] + '.' + m[1] : ''; };
+const toRoman = (n) => { const t = [[10,'X'],[9,'IX'],[5,'V'],[4,'IV'],[1,'I']]; let o = ''; t.forEach(([v, s]) => { while (n >= v) { o += s; n -= v; } }); return o; };
+
+const ICON = {
+  overview:'<rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/>',
+  history:'<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"/><path d="M4 19.5V21h16"/><path d="M9 8h7M9 12h5"/>',
+  roster:'<circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M17 14.2c2.4.2 4 2.1 4 4.8"/>',
+  players:'<rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2.2"/><path d="M5.8 16c.6-1.5 1.8-2.2 3.2-2.2s2.6.7 3.2 2.2M14.5 10h4M14.5 13.5h3"/>',
+  timeline:'<path d="M12 3v18"/><circle cx="12" cy="6" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="12" cy="18" r="2"/><path d="M14 6h6M14 12h4M14 18h6"/>',
+  archive:'<rect x="3" y="4" width="18" height="5" rx="1"/><path d="M5 9v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9M10 13h4"/>',
+  check:'<path d="M5 12.5l4.5 4.5L19 7.5"/>',
+  dash:'<circle cx="12" cy="12" r="7" stroke-dasharray="3 3"/>',
+  arrow:'<path d="M5 12h14M13 6l6 6-6 6"/>',
+  download:'<path d="M12 4v11M7 11l5 5 5-5M5 20h14"/>',
+  upload:'<path d="M12 20V9M7 13l5-5 5 5M5 4h14"/>',
+  reset:'<path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/>',
+  plus:'<path d="M12 5v14M5 12h14"/>',
+  trash:'<path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13"/>',
+  edit:'<path d="M4 20h4L19 9l-4-4L4 16z"/>',
+  install:'<path d="M12 3v12M7 10l5 5 5-5M4 20h16"/>',
+  join:'<circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6.5 6.5-6.5s6.5 2.9 6.5 6.5"/><path d="M18 8v6M15 11h6"/>',
+  copy:'<rect x="9" y="9" width="12" height="12" rx="1.5"/><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/>',
+  chat:'<path d="M4 4.5h16V16H9l-4.5 4V16H4z"/>'
+};
+const ic = (n, s) => '<svg class="ic" width="' + (s || 20) + '" height="' + (s || 20) + '" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">' + ICON[n] + '</svg>';
+
+/* =========================================================
+   3. STORAGE — hanya menyimpan TAMBAHAN; data bawaan tidak tersentuh
+   ========================================================= */
+const KEY = 'ws-archive:v1';
+const emptyAdd = () => ({ players: [], events: [], eras: [], leadership: [], status: {} });
+const S = (v, max) => typeof v === 'string' ? v.replace(/[\u0000-\u001f]/g, ' ').trim().slice(0, max || 300) : '';
+const cleanId = (v) => S(v, 40).replace(/[^\w-]/g, '');
+
+function sanitizeAdd(o){
+  const out = emptyAdd();
+  if (!o || typeof o !== 'object') return out;
+  const arr = (x) => Array.isArray(x) ? x.slice(0, 200) : [];
+  arr(o.players).forEach((p) => {
+    if (!p || typeof p !== 'object') return;
+    const name = S(p.name, 40), role = S(p.role, 40);
+    if (!name || !role) return;
+    out.players.push({ id: cleanId(p.id) || uid(), name, role, joined: S(p.joined, 40) || NA, classification: S(p.classification, 80) || 'Roster',
+      eras: Array.isArray(p.eras) ? p.eras.map(cleanId).filter(Boolean).slice(0, 10) : [] });
+  });
+  arr(o.events).forEach((e) => {
+    if (!e || typeof e !== 'object' || !isoOk(e.iso)) return;
+    const type = S(e.type, 40), title = S(e.title, 80), description = S(e.description, 500);
+    if (!type || !title) return;
+    out.events.push({ id: cleanId(e.id) || uid(), iso: e.iso, type, title, description: description || NA, era: cleanId(e.era) });
+  });
+  arr(o.eras).forEach((e) => {
+    if (!e || typeof e !== 'object' || !isoOk(e.iso)) return;
+    const title = S(e.title, 60); if (!title) return;
+    out.eras.push({ uid: cleanId(e.uid) || uid(), title, iso: e.iso, note: S(e.note, 300) });
+  });
+  arr(o.leadership).forEach((l) => {
+    if (!l || typeof l !== 'object') return;
+    const title = S(l.title, 40), name = S(l.name, 40); if (!title || !name) return;
+    out.leadership.push({ id: cleanId(l.id) || uid(), title, name, from: S(l.from, 40) || NA, era: cleanId(l.era), note: S(l.note, 300) });
+  });
+  if (o.status && typeof o.status === 'object') {
+    squadData.status.forEach((s) => { const v = o.status[s.key]; if (v === 'recorded' || v === 'not-recorded') out.status[s.key] = v; });
+  }
+  return out;
+}
+function loadAdd(){ try { const raw = localStorage.getItem(KEY); return raw ? sanitizeAdd(JSON.parse(raw)) : emptyAdd(); } catch (e) { return emptyAdd(); } }
+function saveAdd(a){ try { localStorage.setItem(KEY, JSON.stringify(a)); return true; } catch (e) { toast('Penyimpanan lokal tidak tersedia di browser ini.'); return false; } }
+
+/* =========================================================
+   4. BUILD — gabungkan data bawaan + tambahan menjadi satu arsip
+   ========================================================= */
+let add = loadAdd();
+let A = null;
+const state = { sel: null, mapEra: null, tab: 'player', q: '', cat: 'all', join: 'qr', joinLast: null };
+
+const ROLE_DEFS = [
+  { key: 'exp',    test: /exp/i,  label: 'EXP LANE',  alias: 'exp lane' },
+  { key: 'roam',   test: /roam/i, label: 'ROAM',      alias: 'roam' },
+  { key: 'jungle', test: /jung/i, label: 'JUNGLE',    alias: 'jungle jungler' },
+  { key: 'mid',    test: /mid/i,  label: 'MID LANE',  alias: 'mid lane' },
+  { key: 'gold',   test: /gold/i, label: 'GOLD LANE', alias: 'gold lane' }
+];
+const roleKey = (r) => { const d = ROLE_DEFS.find((x) => x.test.test(r || '')); return d ? d.key : null; };
+
+function build(){
+  const d = JSON.parse(JSON.stringify(squadData));
+  const a = add;
+  const B = { squad: { name: d.name, tag: d.tag, founded: d.founded, foundedISO: d.foundedISO, founder: d.founder, captain: d.captain, archive: d.archive, note: d.leadershipNote } };
+
+  B.eras = d.eras.map((e) => Object.assign({}, e, { custom: false }))
+    .concat(a.eras.map((e) => ({ uid: e.uid, title: e.title, iso: e.iso, date: fmtDate(e.iso), note: e.note, custom: true })));
+  B.eras.forEach((e, i) => { e.id = toRoman(i + 1); });
+  const uids = new Set(B.eras.map((e) => e.uid));
+  const lastUid = B.eras[B.eras.length - 1].uid;
+  const fixEra = (u) => uids.has(u) ? u : lastUid;
+
+  B.players = d.roster.map((p, i) => Object.assign({}, p, { key: 'd' + i, custom: false }))
+    .concat(a.players.map((p) => ({ key: p.id, name: p.name, role: p.role, joined: p.joined, classification: p.classification, status: 'Recorded', eras: p.eras, custom: true })));
+  B.players.forEach((p, i) => {
+    p.pid = 'WS-P-' + pad(i + 1, 3);
+    p.eras = (p.eras || []).filter((u) => uids.has(u));
+    if (!p.eras.length) p.eras = [lastUid];
+  });
+
+  B.leadership = d.leadership.map((l, i) => Object.assign({}, l, { key: 'dl' + i, custom: false }))
+    .concat(a.leadership.map((l) => ({ key: l.id, title: l.title, name: l.name, from: l.from, era: l.era, note: l.note, custom: true })));
+  B.leadership.forEach((l) => { l.era = fixEra(l.era); });
+
+  const ev = d.timeline.map((e, i) => Object.assign({}, e, { custom: false, seq: i }))
+    .concat(a.events.map((e, i) => ({ id: e.id, iso: e.iso, date: fmtDate(e.iso), type: e.type, title: e.title, description: e.description,
+      era: e.era, treeLabel: e.type.toUpperCase(), custom: true, seq: 1000 + i })));
+  ev.sort((x, y) => x.iso === y.iso ? x.seq - y.seq : (x.iso < y.iso ? -1 : 1));
+  ev.forEach((e, i) => { e.no = pad(i + 1); e.code = 'EVT-' + pad(i + 1, 3); e.era = fixEra(e.era); });
+  B.timeline = ev;
+
+  B.status = d.status.map((s) => Object.assign({}, s, { state: a.status[s.key] || s.state }));
+
+  B.originals = B.players.filter((p) => /original roster/i.test(p.classification));
+  return B;
+}
+const eraByUid = (u) => A.eras.find((e) => e.uid === u) || A.eras[A.eras.length - 1];
+const eraNo = (u) => eraByUid(u).id;
+const leadTitles = () => new Set(A.leadership.map((l) => l.title.toLowerCase()));
+const badgesOf = (p) => { const t = []; A.leadership.forEach((l) => { if (l.name.toLowerCase() === p.name.toLowerCase() && !t.includes(l.title)) t.push(l.title); }); return t; };
+const rosterClass = (p) => { const lt = leadTitles(); const r = p.classification.split('·').map((s) => s.trim()).filter((s) => s && !lt.has(s.toLowerCase())); return r.join(' · ') || p.classification; };
+const playersOfEra = (u) => A.players.filter((p) => p.eras.includes(u));
+
+/* =========================================================
+   5. RENDER
+   ========================================================= */
+const NAV = [
+  { id: 'overview', label: 'Overview', icon: 'overview' },
+  { id: 'history',  label: 'History',  icon: 'history' },
+  { id: 'roster',   label: 'Roster',   icon: 'roster' },
+  { id: 'players',  label: 'Players',  icon: 'players' },
+  { id: 'timeline', label: 'Timeline', icon: 'timeline' },
+  { id: 'archive',  label: 'Archive',  icon: 'archive' },
+  { id: 'join',     label: 'Join WS',  icon: 'join', short: 'Join' }
+];
+const NAVMAP = { top: 'overview', overview: 'overview', history: 'history', eras: 'history', roster: 'roster', rolemap: 'roster', leadership: 'roster', players: 'players', timeline: 'timeline', archive: 'archive', join: 'join' };
+const secHead = (no, id, title, sub, cls) => '<header class="sec-head ' + (cls || '') + '"><p class="sec-no mono">SEC. ' + no + '</p><h2 id="h-' + id + '">' + title + '</h2><p>' + sub + '</p></header>';
+
+function renderChrome(){
+  $('#brand').innerHTML = '<svg width="28" height="28" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 10 L86 27 V54 C86 75 69 86 50 93 C31 86 14 75 14 54 V27 Z" fill="none" stroke="#d81e3f" stroke-width="5"/><path d="M31 38 L41 66 L50 47 L59 66 L69 38" fill="none" stroke="#c9a15a" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>' + esc(A.squad.tag) + ' Archive</span><small>' + esc(A.squad.archive.id) + '</small>';
+  $('#topLinks').innerHTML = NAV.map((n) => '<a href="#' + n.id + '" data-nav="' + n.id + '">' + n.label + '</a>').join('');
+  $('#bottomNav').innerHTML = NAV.map((n) => '<a href="#' + n.id + '" data-nav="' + n.id + '" aria-label="' + n.label + '">' + ic(n.icon, 22) + '<span>' + esc(n.short || n.label) + '</span></a>').join('');
+}
+
+function heroTexts(){
+  const S_ = A.squad, o = A.originals, roles = o.map((p) => p.role);
+  const list = roles.length > 1 ? roles.slice(0, -1).join(', ') + ', dan ' + roles[roles.length - 1] : (roles[0] || NA);
+  const n = NUM_ID[o.length] != null ? NUM_ID[o.length] : o.length;
+  return {
+    lead: 'Setiap squad memiliki titik awal. Bagi ' + S_.name + ', titik tersebut tercatat pada ' + S_.founded + '.',
+    body: S_.name + ' (' + S_.tag + ') merupakan squad Mobile Legends yang didirikan oleh ' + S_.founder + ' pada ' + S_.founded + '. Sejak awal pembentukannya, squad ini memiliki struktur roster yang terdiri atas ' + n + ' pemain dengan pembagian role ' + list + '.'
+  };
+}
+
+function renderHero(){
+  const S_ = A.squad, t = heroTexts(), last = A.eras[A.eras.length - 1];
+  const words = S_.name.split(/\s+/);
+  $('#top').innerHTML =
+    '<div class="hero-bg" aria-hidden="true"><div class="grid-drift"></div></div>' +
+    '<span class="reg a" aria-hidden="true"></span><span class="reg b" aria-hidden="true"></span>' +
+    '<div class="hero-year" aria-hidden="true">' + esc(S_.foundedISO.slice(0, 4)) + '</div>' +
+    '<div class="wrap hero-inner">' +
+      '<div class="hero-meta mono" data-in style="--d:.05s"><span>Archive ID <b>' + esc(S_.archive.id) + '</b></span>' +
+        '<span class="badge"><i class="dot"></i>Archive Open</span><span class="badge ghost">Era ' + last.id + '</span></div>' +
+      '<div class="hero-grid">' +
+        '<div>' +
+          '<div class="tag-row" data-in style="--d:.15s"><span class="tagbox" aria-label="Tag ' + esc(S_.tag) + '">' + esc(S_.tag) + '</span><span class="mono">Mobile Legends Squad</span></div>' +
+          '<h1 class="hero-title" id="h-hero" data-in style="--d:.25s">' + words.map((w) => '<span>' + esc(w) + '</span>').join(' ') + '</h1>' +
+          '<p class="hero-sub mono" data-in style="--d:.4s">Official Historical Archive</p>' +
+          '<p class="hero-founded mono" data-in style="--d:.5s">Founded — ' + esc(S_.founded.toUpperCase()) + '</p>' +
+        '</div>' +
+        '<div class="hero-text" data-in style="--d:.6s"><p class="lead">' + esc(t.lead) + '</p><p class="body">' + esc(t.body) + '</p></div>' +
+      '</div>' +
+      '<div class="hero-line" aria-hidden="true"><div class="hl-top"><span class="hl-mark"></span><span class="hl-rule"></span></div><div class="hl-ticks"></div>' +
+        '<p class="hl-label mono">' + fmtDot(S_.foundedISO) + ' / Record ' + esc(S_.archive.record) + '</p></div>' +
+      '<p class="hero-tagline" data-in style="--d:.9s"><span>The First Record Is Written.</span><span>The History Continues.</span></p>' +
+    '</div>';
+}
+
+function barcode(str){
+  let x = 0, out = '';
+  Array.from(str + '|WS').forEach((ch) => {
+    const c = ch.charCodeAt(0);
+    for (let b = 0; b < 6; b++) { const w = 1 + ((c >> b) & 1) + (b % 3 === 0 ? 1 : 0); if (b % 2 === 0) out += '<rect x="' + x + '" y="0" width="' + w + '" height="30"/>'; x += w + 1; }
+  });
+  return '<svg class="barcode" viewBox="0 0 ' + x + ' 30" preserveAspectRatio="none" fill="currentColor" aria-hidden="true">' + out + '</svg>';
+}
+
+function renderOverview(){
+  const S_ = A.squad, last = A.eras[A.eras.length - 1], o = A.originals, first = A.eras[0].uid;
+  const lead0 = A.leadership.filter((l) => l.era === first);
+  const rows = [
+    ['Squad Name', esc(S_.name)], ['Tag', esc(S_.tag)], ['Founded', esc(S_.founded)], ['Founder', esc(S_.founder)], ['Captain', esc(S_.captain)],
+    ['Original Roster', o.length ? o.map((p) => esc(p.name)).join(', ') : NA],
+    ['Current Record', 'Era ' + last.id + ' — ' + esc(last.title)]
+  ];
+  const stats = [
+    [1, 'Foundation Date'], [o.length, 'Original Players'],
+    [new Set(o.map((p) => p.role.toLowerCase())).size, 'Original Roles'],
+    [new Set(lead0.filter((l) => /founder/i.test(l.title)).map((l) => l.name)).size, 'Founder'],
+    [new Set(lead0.filter((l) => /captain/i.test(l.title)).map((l) => l.name)).size, 'Captain']
+  ];
+  $('#overview').innerHTML = '<div class="wrap">' +
+    secHead('01', 'overview', 'Squad Overview', 'Ringkasan identitas squad berdasarkan data yang tersedia dalam arsip.', 'wide') +
+    '<div class="ov"><dl class="sheet">' + rows.map((r) => '<div class="row"><dt class="mono">' + r[0] + '</dt><dd>' + r[1] + '</dd></div>').join('') + '</dl>' +
+    '<aside class="idcard" aria-label="Archive identity"><div class="idc-top mono"><span>Archive ID</span><span>Official</span></div>' +
+      '<p class="idc-id">' + esc(S_.archive.id) + '</p>' + barcode(S_.archive.id) +
+      '<dl class="idc-meta"><div><dt class="mono">Foundation</dt><dd>' + fmtDot(S_.foundedISO) + '</dd></div><div><dt class="mono">Record</dt><dd>' + esc(S_.archive.record) + '</dd></div></dl>' +
+      '<svg class="stamp" viewBox="0 0 120 120" aria-hidden="true"><defs><path id="stampPath" d="M60 60 m-44 0 a44 44 0 1 1 88 0 a44 44 0 1 1 -88 0"/></defs>' +
+        '<circle cx="60" cy="60" r="56" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="60" cy="60" r="31" fill="none" stroke="currentColor" stroke-width="1"/>' +
+        '<text font-family="ui-monospace,Menlo,monospace" font-size="9.5" letter-spacing="2.6" fill="currentColor"><textPath href="#stampPath">OFFICIAL ARCHIVE • ' + esc(S_.tag) + ' • ' + esc(S_.foundedISO.slice(0, 4)) + ' • RECORDED •</textPath></text>' +
+        '<text x="60" y="68" text-anchor="middle" font-family="Anton,Impact,sans-serif" font-size="24" letter-spacing="2" fill="currentColor">' + esc(S_.tag) + '</text></svg></aside></div>' +
+    '<div class="stats">' + stats.map((s) => '<div class="stat reveal"><span class="num" data-count="' + s[0] + '">' + pad(s[0]) + '</span><span class="lbl mono">' + s[1] + '</span></div>').join('') + '</div>' +
+    '<p class="stats-note mono">Statistik arsip — bukan statistik pertandingan.</p></div>';
+}
+
+function renderHistory(){
+  $('#history').innerHTML = '<div class="wrap split">' +
+    secHead('02', 'history', 'The History', 'A chronological record of ' + esc(A.squad.name) + '.') +
+    '<ol class="tl">' + A.timeline.map((e) =>
+      '<li class="ev reveal" id="ev-' + esc(e.id) + '"><span class="ev-marker" aria-hidden="true"><span>' + e.no + '</span></span>' +
+      '<div class="ev-body"><p class="ev-top mono"><time datetime="' + e.iso + '">' + esc(e.date.toUpperCase()) + '</time><span class="ev-type">' + e.no + ' — ' + esc(e.type.toUpperCase()) + '</span></p>' +
+      '<h3>' + esc(e.title) + '</h3><p class="ev-desc">' + esc(e.description) + '</p><p class="ev-code mono">' + e.code + ' / Era ' + eraNo(e.era) + '</p></div></li>').join('') +
+    '</ol></div>';
+}
+
+function renderEras(){
+  $('#eras').innerHTML = '<div class="wrap">' +
+    secHead('03', 'eras', 'Era System', 'Sejarah squad dicatat per era, seperti bab dalam sebuah buku sejarah.', 'wide') +
+    '<div style="margin-top:44px">' + A.eras.map((e) => {
+      const ps = playersOfEra(e.uid), ls = A.leadership.filter((l) => l.era === e.uid);
+      return '<article class="era reveal" id="era-' + esc(e.uid) + '"><div class="era-numeral" aria-hidden="true">' + e.id + '</div>' +
+        '<div class="era-main"><p class="era-chapter mono">Chapter ' + e.id + '</p><h3>Era ' + e.id + '<small>' + esc(e.title) + '</small></h3><p class="era-date mono">' + esc(e.date.toUpperCase()) + '</p>' +
+        (e.note ? '<p class="dim" style="margin-top:12px;max-width:60ch">' + esc(e.note) + '</p>' : '') + '</div>' +
+        '<div class="era-cols"><div><h4>Roster</h4><ul class="leaders">' + (ps.length ? ps.map((p) => '<li><span>' + esc(p.name) + '</span><span>' + esc(p.role) + '</span></li>').join('') : '<li><span class="dim">Data belum tercatat</span></li>') + '</ul></div>' +
+        '<div><h4>Leadership</h4><ul class="leaders">' + (ls.length ? ls.map((l) => '<li><span>' + esc(l.title) + '</span><span>' + esc(l.name) + '</span></li>').join('') : '<li><span class="dim">Data belum tercatat</span></li>') + '</ul></div></div></article>';
+    }).join('') + '</div><p class="era-end mono">Belum ada era lanjutan yang tercatat</p></div>';
+}
+
+function avatar(p){
+  const rk = roleKey(p.role), code = rk === 'jungle' ? 'JG' : rk === 'exp' ? 'EXP' : rk === 'roam' ? 'ROAM' : rk === 'mid' ? 'MID' : rk === 'gold' ? 'GOLD' : 'PLR';
+  return '<svg class="av" viewBox="0 0 96 96" role="img" aria-label="Avatar inisial ' + esc(p.name.charAt(0).toUpperCase()) + '"><path d="M48 6 L84 24 V56 C84 74 66 86 48 92 C30 86 12 74 12 56 V24 Z"/>' +
+    '<text class="ini" x="48" y="54" text-anchor="middle">' + esc(p.name.charAt(0).toUpperCase()) + '</text><text class="code" x="48" y="72" text-anchor="middle">' + code + '</text></svg>';
+}
+
+function renderRoster(){
+  const o = A.originals;
+  $('#roster').innerHTML = '<div class="wrap">' +
+    secHead('04', 'roster', 'Original Five', 'Roster perdana yang tercatat pada ' + esc(A.squad.founded) + '.', 'wide') +
+    '<div class="cards">' + (o.length ? o.map((p) => {
+      const b = badgesOf(p).filter((t) => /founder|captain/i.test(t));
+      return '<article class="pcard reveal' + (b.length ? ' lead' : '') + '" id="card-' + esc(p.key) + '"><div class="pc-top mono"><span>' + p.pid + '</span><span>Era ' + eraNo(p.eras[0]) + '</span></div>' + avatar(p) +
+        '<h3>' + esc(p.name) + '</h3><p class="pc-role mono">' + esc(p.role) + '</p>' +
+        '<div class="badges">' + b.map((t) => '<span class="tagchip mono">' + esc(t) + '</span>').join('') + '</div>' +
+        '<dl class="pc-dl"><div><dt>Join date</dt><dd>' + esc(p.joined) + '</dd></div><div><dt>Roster</dt><dd>' + esc(rosterClass(p)) + '</dd></div><div><dt>Status</dt><dd>' + esc(p.status) + '</dd></div></dl>' +
+        '<button class="pc-open" type="button" data-open-player="' + esc(p.key) + '" aria-label="Open ' + esc(p.name) + ' in Player Archive"><span>Player record</span>' + ic('arrow', 18) + '</button></article>';
+    }).join('') : '<p class="dim">Data belum tercatat</p>') + '</div></div>';
+}
+
+function renderRoleMap(){
+  const uidSel = state.mapEra, ps = playersOfEra(uidSel), by = {}, others = [];
+  ps.forEach((p) => { const k = roleKey(p.role); if (k) (by[k] = by[k] || []).push(p); else others.push(p); });
+  const POS = { mid: [50, 13], exp: [17, 46], gold: [83, 46], jungle: [50, 65], roam: [50, 88] };
+  const tabs = A.eras.length > 1 ? '<div class="era-tabs" role="group" aria-label="Choose era">' + A.eras.map((e) => '<button type="button" class="btn sm' + (e.uid === uidSel ? ' on' : '') + '" aria-pressed="' + (e.uid === uidSel) + '" data-map-era="' + esc(e.uid) + '">Era ' + e.id + '</button>').join('') + '</div>' : '';
+  const nodes = ROLE_DEFS.map((d) => { const l = by[d.key] || [], pos = POS[d.key];
+    return '<div class="node' + (l.length ? '' : ' empty') + '" id="node-' + d.key + '" style="left:' + pos[0] + '%;top:' + pos[1] + '%"><span class="n-dot"></span><span class="n-role mono">' + (d.key === 'jungle' ? 'JUNGLE' : d.label) + '</span><span class="n-name">' + (l.length ? l.map((p) => esc(p.name)).join(' / ') : 'Data belum tercatat') + '</span></div>'; }).join('');
+  const order = ROLE_DEFS.map((d) => d.key);
+  const trs = order.map((k) => { const l = by[k] || []; const d = ROLE_DEFS.find((x) => x.key === k);
+    return '<tr><th scope="row" class="mono">' + (l.length ? esc(l[0].role.toUpperCase()) : d.label) + '</th><td>' + (l.length ? l.map((p) => esc(p.name)).join(', ') : '<span class="dim">Data belum tercatat</span>') + '</td></tr>'; }).join('') +
+    others.map((p) => '<tr><th scope="row" class="mono">' + esc(p.role.toUpperCase()) + '</th><td>' + esc(p.name) + '</td></tr>').join('');
+  $('#rolemap').innerHTML = '<div class="wrap split">' +
+    secHead('05', 'rolemap', 'Role Map', 'Komposisi roster dalam tata letak taktis. Bukan peta permainan.') +
+    '<div>' + tabs + '<div class="rm-grid"><figure class="rmap" style="margin:0" aria-label="Tactical lineup, Era ' + eraNo(uidSel) + '">' +
+      '<svg class="rmap-svg" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><rect class="frame" x="3" y="3" width="94" height="94"/>' +
+      '<polygon class="kite" points="50,13 83,46 50,65 17,46"/><line class="axis" x1="50" y1="13" x2="50" y2="88"/><line class="axis" x1="17" y1="46" x2="83" y2="46"/></svg>' + nodes + '</figure>' +
+    '<table class="rtable"><caption class="sr">Role distribution</caption><thead><tr><th scope="col" class="mono">Role</th><th scope="col" class="mono">Player</th></tr></thead><tbody>' + trs + '</tbody></table></div></div></div>';
+}
+
+function renderLeadership(){
+  const groups = []; A.leadership.forEach((l) => { let g = groups.find((x) => x.t.toLowerCase() === l.title.toLowerCase()); if (!g) { g = { t: l.title, list: [] }; groups.push(g); } g.list.push(l); });
+  $('#leadership').innerHTML = '<div class="wrap">' +
+    secHead('06', 'leadership', 'Leadership Archive', 'Struktur kepemimpinan yang tercatat dalam arsip.', 'wide') +
+    '<div class="lead-grid">' + groups.map((g) => '<div class="lead-col reveal"><p class="role mono">' + esc(g.t) + '</p>' +
+      g.list.map((l) => '<div class="lead-ent"><p class="lead-name">' + esc(l.name) + '</p><p class="lead-meta mono">Recorded since ' + esc(l.from) + ' / Era ' + eraNo(l.era) + '</p>' + (l.note ? '<p class="dim" style="margin-top:8px">' + esc(l.note) + '</p>' : '') + '</div>').join('') + '</div>').join('') + '</div>' +
+    '<p class="lead-note">' + esc(A.squad.note) + '</p></div>';
+}
+
+function renderPlayers(){
+  $('#players').innerHTML = '<div class="wrap">' +
+    secHead('07', 'players', 'Player Archive', 'Database pemain yang tercatat. Pilih satu baris untuk membuka catatan lengkapnya.', 'wide') +
+    '<div class="db"><div class="db-list"><div class="db-h mono" aria-hidden="true"><span>ID</span><span>Player</span><span>Role</span></div><ul>' +
+    A.players.map((p) => '<li><button type="button" class="db-row" data-select="' + esc(p.key) + '" aria-pressed="' + (p.key === state.sel) + '"><span class="c-id">' + p.pid + '</span><span class="c-name">' + esc(p.name) + '</span><span class="c-role">' + esc(p.role) + '</span></button></li>').join('') +
+    '</ul></div><article class="db-detail" id="player-detail" aria-live="polite"></article></div></div>';
+  renderDetail();
+}
+function renderDetail(){
+  const p = A.players.find((x) => x.key === state.sel) || A.players[0]; if (!p) return;
+  const el = $('#player-detail'); if (!el) return;
+  const refs = A.timeline.filter((e) => (e.description + ' ' + e.title).toLowerCase().includes(p.name.toLowerCase()) || (e.rosterEra && p.eras.includes(e.rosterEra)));
+  const b = badgesOf(p);
+  const field = (k, v, na) => '<div><dt class="mono">' + k + '</dt><dd' + (na ? ' class="na"' : '') + '>' + v + '</dd></div>';
+  el.innerHTML = '<div class="dd-top mono"><span>Player record — ' + p.pid + '</span><span>Era ' + p.eras.map(eraNo).join(', ') + '</span></div>' +
+    '<h3 class="dd-name">' + esc(p.name) + '</h3><div class="badges">' + b.map((t) => '<span class="tagchip mono">' + esc(t) + '</span>').join('') + '</div>' +
+    '<dl class="dd-dl">' + field('Role', esc(p.role)) + field('Joined', esc(p.joined)) + field('Classification', esc(p.classification)) + field('Status', esc(p.status)) +
+      field('Role history', esc(p.role) + ' — tercatat sejak ' + esc(p.joined)) + field('Achievements', NA, true) + field('Departure record', NA, true) + field('Match statistics', NA_EN, true) + '</dl>' +
+    '<div class="dd-refs"><h4 class="mono">Referenced in</h4>' + (refs.length ? refs.map((e) => '<button type="button" class="ref" data-go="ev-' + esc(e.id) + '"><span class="mono">' + e.code + '</span><span>' + esc(e.title) + '</span></button>').join('') : '<p class="dim" style="padding:10px 0">' + NA + '</p>') + '</div>';
+}
+
+function renderTimeline(){
+  const groups = []; A.timeline.forEach((e) => { let g = groups.find((x) => x.iso === e.iso); if (!g) { g = { iso: e.iso, events: [] }; groups.push(g); } g.events.push(e); });
+  $('#timeline').innerHTML = '<div class="wrap split">' +
+    secHead('08', 'timeline', 'Archive Timeline', 'Struktur cabang catatan sejarah dari tanggal pendirian.') +
+    '<div>' + groups.map((g) => '<div class="tree reveal"><span class="t-node root mono"><time datetime="' + g.iso + '">' + fmtShort(g.iso) + '</time></span><ul>' +
+      g.events.map((e) => { const kids = e.rosterEra ? playersOfEra(e.rosterEra) : [];
+        return '<li><button type="button" class="t-node mono" data-go="ev-' + esc(e.id) + '">' + esc(e.treeLabel || e.type.toUpperCase()) + '</button>' +
+          (kids.length ? '<ul>' + kids.map((p) => '<li><button type="button" class="t-node leaf" data-open-player="' + esc(p.key) + '">' + esc(p.name) + '</button></li>').join('') + '</ul>' : '') + '</li>'; }).join('') + '</ul></div>').join('') + '</div></div>';
+}
+
+function renderArchive(){
+  const rec = A.status.filter((s) => s.state === 'recorded').length;
+  $('#archive').innerHTML = '<div class="wrap">' +
+    secHead('09', 'archive', 'Archive Status', 'Kelengkapan catatan arsip pada saat ini.', 'wide') +
+    '<ul class="stl">' + A.status.map((s) => { const r = s.state === 'recorded';
+      return '<li class="st ' + (r ? 'rec' : 'nrec') + '"><span class="st-ic">' + ic(r ? 'check' : 'dash', 18) + '</span><span class="st-l"><span class="k">' + esc(s.key) + '</span>' + (r ? '' : '<span class="n">' + NA + '</span>') + '</span><span class="st-v">' + (r ? 'Recorded' : 'Not yet recorded') + '</span></li>'; }).join('') + '</ul>' +
+    '<p class="st-note">' + ic('dash', 20) + '<span><b>Not yet recorded</b> hanya berarti datanya belum tersedia dalam arsip. Ini bukan status squad.</span></p>' +
+    '<p class="st-count mono">' + rec + ' recorded / ' + (A.status.length - rec) + ' not yet recorded</p>' +
+    '<div class="maint"><span>Arsip dapat diperbarui secara lokal ketika ada roster atau sejarah baru.</span>' +
+    '<button class="btn sm" type="button" data-open-editor>' + ic('edit', 16) + 'Archive Editor</button>' +
+    '<button class="btn sm" type="button" id="installBtn" hidden>' + ic('install', 16) + 'Install App</button></div></div>';
+  const ib = $('#installBtn'); if (ib && deferred) ib.hidden = false;
+}
+
+function renderFooter(){
+  const S_ = A.squad;
+  $('#footer').innerHTML = '<div class="wrap"><div class="f-grid"><div><p class="f-name">' + esc(S_.name) + '</p><span class="f-tag">' + esc(S_.tag) + '</span></div>' +
+    '<div class="f-meta mono"><p><b>Official Historical Archive</b></p><p>Founded ' + esc(S_.founded) + '</p><p>Archive Record: ' + esc(S_.archive.id) + '</p></div></div>' +
+    '<p class="f-disc">All records displayed in this archive are based on available historical data.</p></div>';
+}
+
+/* =========================================================
+   5b. JOIN WS — RECRUITMENT PORTAL
+   ========================================================= */
+const JOIN_KEY = 'ws-join:v1';
+const ROLE_OPTIONS = ['EXP Lane', 'Jungler', 'Mid Lane', 'Gold Lane', 'Roam'];
+function loadJoin(){
+  try { const raw = localStorage.getItem(JOIN_KEY); const j = raw ? JSON.parse(raw) : null;
+    return (j && typeof j === 'object') ? { seq: (+j.seq || 0), apps: Array.isArray(j.apps) ? j.apps : [] } : { seq: 0, apps: [] };
+  } catch (e) { return { seq: 0, apps: [] }; }
+}
+function saveJoin(j){ try { localStorage.setItem(JOIN_KEY, JSON.stringify(j)); return true; } catch (e) { toast('Penyimpanan lokal tidak tersedia di browser ini.'); return false; } }
+let joinData = loadJoin();
+let joinCanvas = null;
+
+function registrationURL(){ return window.location.origin + window.location.pathname + '#register'; }
+
+function qrSVG(text, size){
+  try {
+    const qr = qrcode(0, 'M');
+    qr.addData(text); qr.make();
+    const n = qr.getModuleCount(), margin = 4, total = n + margin * 2, cell = size / total;
+    let rects = '';
+    for (let r = 0; r < n; r++) for (let c = 0; c < n; c++) if (qr.isDark(r, c))
+      rects += '<rect x="' + ((c + margin) * cell).toFixed(2) + '" y="' + ((r + margin) * cell).toFixed(2) + '" width="' + (cell + .5).toFixed(2) + '" height="' + (cell + .5).toFixed(2) + '"/>';
+    return '<svg class="qr-svg" viewBox="0 0 ' + size + ' ' + size + '" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="QR code pendaftaran ' + esc(A.squad.name) + '">' +
+      '<rect width="' + size + '" height="' + size + '" fill="#f4efe9" rx="6"/><g fill="#0a090c">' + rects + '</g></svg>';
+  } catch (e) { return '<p class="dim">QR code tidak dapat dibuat pada perangkat ini.</p>'; }
+}
+
+function joinQRView(){
+  const S_ = A.squad, url = registrationURL();
+  return '<div class="wrap join-view">' +
+    '<header class="sec-head wide"><p class="sec-no mono">SEC. 10</p><h2 id="h-join">Join ' + esc(S_.name) + '</h2>' +
+      '<p class="mono" style="color:var(--gold);letter-spacing:.16em;margin-top:8px">OFFICIAL RECRUITMENT PORTAL</p></header>' +
+    '<p class="jf-lead">Recruitment begins with a record. Scan the official QR code to begin your application.</p>' +
+    '<div class="qr-card" data-in>' + qrSVG(url, 260) +
+      '<p class="qr-scan">Scan to Register</p><p class="mono dim">' + esc(S_.tag) + ' — Recruitment 2026</p></div>' +
+    '<dl class="sheet" style="margin-top:40px;max-width:420px">' +
+      '<div class="row"><dt class="mono">Squad</dt><dd>' + esc(S_.name) + '</dd></div>' +
+      '<div class="row"><dt class="mono">Tag</dt><dd>' + esc(S_.tag) + '</dd></div>' +
+      '<div class="row"><dt class="mono">Recruitment</dt><dd><span class="badge"><i class="dot"></i>Open</span></dd></div>' +
+      '<div class="row"><dt class="mono">Founded</dt><dd>' + esc(S_.founded) + '</dd></div></dl>' +
+    '<div class="join-fallback"><a class="btn primary" href="#register">' + ic('arrow', 16) + 'Continue to Application</a></div>' +
+    '</div>';
+}
+
+const fld2 = (id, label, inputHtml, optional) => '<div class="fld"><label for="f-' + id + '">' + esc(label) + (optional ? ' <span class="dim">(opsional)</span>' : '') + '</label>' + inputHtml + '<span class="err" id="err-' + id + '"></span></div>';
+const inp2 = (id, type, extra) => '<input id="f-' + id + '" name="' + id + '" type="' + type + '" ' + (extra || '') + '>';
+function roleSelectOptions(sel, allowNone){
+  let out = allowNone ? '<option value="">Tidak ada</option>' : '<option value="">Pilih role…</option>';
+  ROLE_OPTIONS.forEach((r) => { out += '<option value="' + esc(r) + '"' + (r === sel ? ' selected' : '') + '>' + esc(r) + '</option>'; });
+  return out;
+}
+
+function joinFormView(){
+  const S_ = A.squad;
+  return '<div class="wrap join-view">' +
+    '<header class="sec-head wide"><p class="step-ind mono dim">STEP 01 / APPLICATION</p><h2 id="h-join" style="margin-top:14px">Application Form</h2>' +
+      '<p class="mono" style="color:var(--gold);letter-spacing:.1em">' + esc(S_.name.toUpperCase()) + ' — WS RECRUITMENT 2026</p></header>' +
+    '<form id="joinFormEl" novalidate autocomplete="off">' +
+      '<h3 class="jf-h4">Identitas</h3>' +
+      fld2('nickname', 'Nickname / Nama', inp2('nickname', 'text', 'required maxlength="40"')) +
+      '<div class="frow">' + fld2('mlId', 'ID Mobile Legends', inp2('mlId', 'text', 'required maxlength="30"')) + fld2('serverId', 'Server ID', inp2('serverId', 'text', 'required maxlength="20"')) + '</div>' +
+      fld2('age', 'Usia', inp2('age', 'number', 'required min="1" max="99"')) +
+      '<h3 class="jf-h4">Role</h3>' +
+      '<div class="frow">' + fld2('primaryRole', 'Role Utama', '<select id="f-primaryRole" name="primaryRole" required>' + roleSelectOptions() + '</select>') +
+        fld2('secondaryRole', 'Role Kedua', '<select id="f-secondaryRole" name="secondaryRole">' + roleSelectOptions(null, true) + '</select>', true) + '</div>' +
+      '<h3 class="jf-h4">Performa</h3>' +
+      '<div class="frow">' + fld2('currentRank', 'Rank Saat Ini', inp2('currentRank', 'text', 'required maxlength="30"')) + fld2('peakRank', 'Peak Rank', inp2('peakRank', 'text', 'maxlength="30"'), true) + '</div>' +
+      '<div class="frow">' + fld2('winRate', 'Win Rate', inp2('winRate', 'text', 'required maxlength="10" placeholder="mis. 62%"')) + fld2('totalMatches', 'Total Match', inp2('totalMatches', 'number', 'required min="0"')) + '</div>' +
+      '<h3 class="jf-h4">Informasi Gameplay</h3>' +
+      fld2('heroPool', 'Hero Utama / Hero Pool', inp2('heroPool', 'text', 'maxlength="120"'), true) +
+      fld2('playTime', 'Jam Bermain yang Biasa Tersedia', inp2('playTime', 'text', 'maxlength="80"'), true) +
+      '<h3 class="jf-h4">Pengalaman</h3>' +
+      fld2('previousExperience', 'Pengalaman Squad / Tim Sebelumnya', '<textarea id="f-previousExperience" name="previousExperience" maxlength="500"></textarea>', true) +
+      fld2('reason', 'Alasan Ingin Bergabung dengan ' + esc(S_.name), '<textarea id="f-reason" name="reason" required maxlength="500"></textarea>') +
+      '<h3 class="jf-h4">Kontak</h3>' +
+      fld2('contact', 'Nomor WhatsApp / Kontak', inp2('contact', 'tel', 'required maxlength="30"')) +
+      '<div class="jf-check"><input type="checkbox" id="f-agree" name="agree"><div><label for="f-agree">Saya menyatakan bahwa informasi yang saya masukkan adalah benar.</label><span class="err" id="err-agree"></span></div></div>' +
+      '<button class="btn primary block" type="submit" id="joinSubmitBtn">' + ic('arrow', 16) + 'Submit Application</button>' +
+    '</form></div>';
+}
+
+function joinSuccessView(){
+  const app = state.joinLast;
+  if (!app) { state.join = 'qr'; return joinQRView(); }
+  const groupBtn = WA_GROUP_LINK
+    ? '<a class="btn primary block" href="' + esc(WA_GROUP_LINK) + '" target="_blank" rel="noopener noreferrer">' + ic('chat', 16) + 'Join Official Group</a>'
+    : '<button class="btn primary block" type="button" aria-disabled="true" data-no-group>' + ic('chat', 16) + 'Join Official Group</button>';
+  return '<div class="wrap join-view">' +
+    '<header class="sec-head wide"><p class="sec-no mono">SEC. 10</p><h2 id="h-join">Application Received</h2><p class="dim">Your application has been successfully recorded.</p></header>' +
+    '<p class="badge" style="margin-top:6px"><i class="dot"></i>Under Review</p>' +
+    '<dl class="sheet" style="margin-top:30px;max-width:460px">' +
+      '<div class="row"><dt class="mono">Application ID</dt><dd class="mono">' + esc(app.applicationId) + '</dd></div>' +
+      '<div class="row"><dt class="mono">Applicant</dt><dd>' + esc(app.nickname) + '</dd></div>' +
+      '<div class="row"><dt class="mono">Primary Role</dt><dd>' + esc(app.primaryRole) + '</dd></div>' +
+      '<div class="row"><dt class="mono">Submission Date</dt><dd>' + esc(fmtDate(app.submittedAt)) + '</dd></div>' +
+      '<div class="row"><dt class="mono">Recruitment Status</dt><dd>Under Review</dd></div></dl>' +
+    '<p class="st-note">' + ic('dash', 18) + '<span>Application data is stored locally on this device.</span></p>' +
+    '<h3 class="jf-h4">Digital Recruitment Card</h3>' +
+    '<div class="rc-wrap" id="rcMount" aria-live="polite"></div>' +
+    '<div class="rc-actions"><button class="btn primary" type="button" data-download-card>' + ic('download', 16) + 'Download Card</button></div>' +
+    '<div class="next-step"><p class="jf-lead">Your application has been received. Continue to the official WS recruitment group for further information.</p>' +
+      '<div class="wa-actions">' + groupBtn + '<button class="btn block" type="button" id="copyGroupBtn" data-copy-group>' + ic('copy', 16) + 'Copy Group Link</button></div>' +
+    '</div></div>';
+}
+
+function drawRecruitCard(app, cb){
+  const W = 1080, H = 1350;
+  const cv = document.createElement('canvas'); cv.width = W; cv.height = H;
+  cv.setAttribute('role', 'img'); cv.setAttribute('aria-label', 'Digital recruitment card untuk ' + app.nickname);
+  const ctx = cv.getContext('2d');
+  const draw = () => {
+    const bg = ctx.createLinearGradient(0, 0, W, H); bg.addColorStop(0, '#16131a'); bg.addColorStop(1, '#0a090c');
+    ctx.fillStyle = bg; ctx.fillRect(0, 0, W, H);
+    ctx.strokeStyle = 'rgba(255,255,255,.05)'; ctx.lineWidth = 1;
+    for (let x = 0; x <= W; x += 54) { ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H); ctx.stroke(); }
+    for (let y = 0; y <= H; y += 54) { ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke(); }
+    ctx.strokeStyle = '#c9a15a'; ctx.lineWidth = 3; ctx.strokeRect(28, 28, W - 56, H - 56);
+    ctx.strokeStyle = 'rgba(216,30,63,.7)'; ctx.lineWidth = 1; ctx.strokeRect(42, 42, W - 84, H - 84);
+    ctx.textAlign = 'left'; ctx.fillStyle = '#857d8c'; ctx.font = '600 22px Inter, sans-serif';
+    ctx.fillText('OFFICIAL RECRUITMENT', 80, 130);
+    ctx.textAlign = 'right'; ctx.fillText('WS ARCHIVE · 2026', W - 80, 130); ctx.textAlign = 'left';
+    ctx.fillStyle = '#f4efe9'; ctx.font = '400 74px Anton, Impact, sans-serif';
+    ctx.fillText('TAJUD DIPENJARUY', 80, 220);
+    ctx.strokeStyle = '#d81e3f'; ctx.fillStyle = 'rgba(216,30,63,.16)'; ctx.fillRect(80, 244, 90, 52); ctx.lineWidth = 2; ctx.strokeRect(80, 244, 90, 52);
+    ctx.fillStyle = '#f4efe9'; ctx.font = '400 34px Anton, Impact, sans-serif'; ctx.textAlign = 'center'; ctx.fillText('WS', 125, 282); ctx.textAlign = 'left';
+    ctx.fillStyle = '#c9a15a'; ctx.font = '600 26px Inter, sans-serif'; ctx.fillText('RECRUITMENT 2026', 190, 278);
+    ctx.strokeStyle = 'rgba(255,255,255,.16)'; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(80, 340); ctx.lineTo(W - 80, 340); ctx.stroke();
+    const field = (label, value, y) => {
+      ctx.fillStyle = '#857d8c'; ctx.font = '600 22px Inter, sans-serif'; ctx.fillText(label, 80, y);
+      ctx.fillStyle = '#f4efe9'; ctx.font = '400 46px Anton, Impact, sans-serif'; ctx.fillText(String(value).toUpperCase(), 80, y + 56);
+    };
+    field('APPLICANT', app.nickname, 420);
+    field('ROLE', app.primaryRole, 560);
+    ctx.fillStyle = '#857d8c'; ctx.font = '600 20px Inter, sans-serif'; ctx.fillText('APPLICATION ID', 80, 700);
+    ctx.fillStyle = '#ff6b85'; ctx.font = '500 40px ui-monospace, Menlo, monospace'; ctx.fillText(app.applicationId, 80, 748);
+    ctx.strokeStyle = '#c9a15a'; ctx.lineWidth = 2; ctx.strokeRect(80, 790, 260, 62);
+    ctx.fillStyle = '#c9a15a'; ctx.font = '600 26px Inter, sans-serif'; ctx.textAlign = 'center'; ctx.fillText('UNDER REVIEW', 210, 830); ctx.textAlign = 'left';
+    ctx.fillStyle = '#857d8c'; ctx.font = '500 24px ui-monospace, Menlo, monospace'; ctx.fillText('APPLIED ' + fmtDot(app.submittedAt), 80, 910);
+    let seed = 0; for (let i = 0; i < app.applicationId.length; i++) seed = (seed * 31 + app.applicationId.charCodeAt(i)) >>> 0;
+    const rnd = () => { seed = (seed * 1103515245 + 12345) >>> 0; return (seed >>> 8) / 0x1000000; };
+    let bx = 80; ctx.fillStyle = 'rgba(244,239,233,.8)';
+    while (bx < W - 80) { const bw = 2 + Math.floor(rnd() * 6); ctx.fillRect(bx, 970, bw, 60); bx += bw + 2 + Math.floor(rnd() * 6); }
+    ctx.save(); ctx.translate(W - 190, H - 190); ctx.rotate(-14 * Math.PI / 180);
+    ctx.strokeStyle = 'rgba(255,107,133,.85)'; ctx.lineWidth = 3; ctx.beginPath(); ctx.arc(0, 0, 90, 0, Math.PI * 2); ctx.stroke();
+    ctx.beginPath(); ctx.arc(0, 0, 74, 0, Math.PI * 2); ctx.stroke();
+    ctx.fillStyle = 'rgba(255,107,133,.85)'; ctx.font = '600 18px Inter, sans-serif'; ctx.textAlign = 'center';
+    ctx.fillText('OFFICIAL', 0, -6); ctx.fillText('RECRUITMENT', 0, 18); ctx.restore();
+    ctx.fillStyle = '#857d8c'; ctx.font = '500 20px ui-monospace, Menlo, monospace'; ctx.textAlign = 'left';
+    ctx.fillText(A.squad.archive.id + ' · ARCHIVE RECORD', 80, H - 70);
+    cb(cv);
+  };
+  if (document.fonts && document.fonts.load) {
+    Promise.all([document.fonts.load('74px Anton'), document.fonts.load('600 22px Inter')]).then(draw).catch(draw);
+  } else draw();
+}
+function mountRecruitCard(){
+  const mount = $('#rcMount'); if (!mount || !state.joinLast) return;
+  drawRecruitCard(state.joinLast, (cv) => { joinCanvas = cv; mount.innerHTML = ''; mount.appendChild(cv); });
+}
+function downloadCard(){
+  if (!joinCanvas || !state.joinLast) { toast('Kartu belum siap diunduh.'); return; }
+  joinCanvas.toBlob((blob) => {
+    if (!blob) { toast('Gagal membuat gambar kartu.'); return; }
+    const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = state.joinLast.applicationId + '.png';
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(a.href), 1500);
+    toast('Kartu diunduh sebagai ' + a.download + '.');
+  }, 'image/png');
+}
+function fallbackCopy(text, done){
+  try { const ta = document.createElement('textarea'); ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0'; document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove(); done(); }
+  catch (e) { toast('Gagal menyalin link.'); }
+}
+function copyGroupLink(){
+  if (!WA_GROUP_LINK) { toast('Link grup WhatsApp belum dikonfigurasi.'); return; }
+  const btn = $('#copyGroupBtn');
+  const done = () => { toast('LINK COPIED'); if (btn) { const orig = btn.innerHTML; btn.innerHTML = ic('check', 16) + 'Link Copied'; btn.classList.add('on'); setTimeout(() => { btn.innerHTML = orig; btn.classList.remove('on'); }, 1800); } };
+  if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(WA_GROUP_LINK).then(done).catch(() => fallbackCopy(WA_GROUP_LINK, done));
+  else fallbackCopy(WA_GROUP_LINK, done);
+}
+
+function validateJoinForm(form){
+  const get = (id) => (form.elements[id] ? String(form.elements[id].value || '').trim() : ''), errs = {};
+  if (!get('nickname')) errs.nickname = 'Nickname wajib diisi.';
+  if (!get('mlId')) errs.mlId = 'ID Mobile Legends wajib diisi.';
+  if (!get('serverId')) errs.serverId = 'Server ID wajib diisi.';
+  if (!get('age')) errs.age = 'Usia wajib diisi.';
+  if (!get('primaryRole')) errs.primaryRole = 'Role utama wajib dipilih.';
+  if (!get('currentRank')) errs.currentRank = 'Rank saat ini wajib diisi.';
+  if (!get('winRate')) errs.winRate = 'Win rate wajib diisi.';
+  if (!get('totalMatches')) errs.totalMatches = 'Total match wajib diisi.';
+  if (!get('reason')) errs.reason = 'Alasan bergabung wajib diisi.';
+  if (!get('contact')) errs.contact = 'Nomor kontak wajib diisi.';
+  if (!form.elements.agree || !form.elements.agree.checked) errs.agree = 'Anda harus menyetujui pernyataan ini.';
+  return errs;
+}
+function applyJoinErrors(form, errs){
+  $$('.err', form).forEach((e) => { e.textContent = ''; });
+  $$('[aria-invalid]', form).forEach((e) => e.removeAttribute('aria-invalid'));
+  const keys = Object.keys(errs);
+  keys.forEach((key) => {
+    const errEl = document.getElementById('err-' + key); if (errEl) errEl.textContent = errs[key];
+    const fieldEl = document.getElementById('f-' + key); if (fieldEl) fieldEl.setAttribute('aria-invalid', 'true');
+  });
+  if (keys.length) { const first = document.getElementById('f-' + keys[0]); if (first) first.focus(); toast('Periksa kembali form pendaftaran.'); }
+}
+function nextAppId(){ joinData.seq += 1; return 'WS-APP-2026-' + pad(joinData.seq, 4); }
+function handleJoinSubmit(form){
+  const errs = validateJoinForm(form);
+  if (Object.keys(errs).length) { applyJoinErrors(form, errs); return; }
+  applyJoinErrors(form, {});
+  const btn = $('#joinSubmitBtn'); if (btn) btn.classList.add('loading');
+  const v = (id) => S(form.elements[id] ? form.elements[id].value : '', 500);
+  setTimeout(() => {
+    const app = {
+      applicationId: nextAppId(), nickname: v('nickname'), mlId: v('mlId'), serverId: v('serverId'), age: v('age'),
+      primaryRole: v('primaryRole'), secondaryRole: v('secondaryRole') || 'Tidak ada',
+      currentRank: v('currentRank'), peakRank: v('peakRank') || NA, winRate: v('winRate'), totalMatches: v('totalMatches'),
+      heroPool: v('heroPool') || NA, playTime: v('playTime') || NA,
+      previousExperience: v('previousExperience') || NA, reason: v('reason'), contact: v('contact'),
+      status: 'UNDER REVIEW', submittedAt: new Date().toISOString().slice(0, 10)
+    };
+    joinData.apps.push(app); saveJoin(joinData);
+    state.joinLast = app; state.join = 'success';
+    try { history.replaceState(null, '', window.location.pathname + window.location.search + '#join'); } catch (er) {}
+    renderJoin(); goTo('join'); toast('Pendaftaran berhasil dikirim.');
+  }, reduced ? 0 : 420);
+}
+
+function renderJoin(){
+  const el = $('#join'); if (!el) return;
+  if (state.join === 'form') el.innerHTML = joinFormView();
+  else if (state.join === 'success') { el.innerHTML = joinSuccessView(); mountRecruitCard(); }
+  else el.innerHTML = joinQRView();
+}
+function handleHash(){
+  const h = window.location.hash;
+  if (h === '#register') { if (state.join !== 'success') { state.join = 'form'; renderJoin(); } goTo('join'); }
+  else if (h === '#join') { if (state.join !== 'success') { state.join = 'qr'; renderJoin(); } }
+}
+
+function renderAll(){
+  renderChrome(); renderHero(); renderOverview(); renderHistory(); renderEras(); renderRoster(); renderRoleMap(); renderLeadership(); renderPlayers(); renderTimeline(); renderArchive(); renderJoin(); renderFooter();
+  observe(); setActive(currentNav);
+}
+
+/* =========================================================
+   6. OBSERVERS: scroll-spy, reveal, counters
+   ========================================================= */
+let spy, revIO, cntIO, currentNav = 'overview';
+function setActive(id){
+  currentNav = id;
+  $$('[data-nav]').forEach((a) => { if (a.dataset.nav === id) a.setAttribute('aria-current', 'true'); else a.removeAttribute('aria-current'); });
+}
+function animateCount(el){
+  const to = +el.dataset.count; if (reduced || to === 0) { el.textContent = pad(to); return; }
+  const t0 = performance.now(), dur = 800;
+  const step = (t) => { const p = Math.min(1, (t - t0) / dur); el.textContent = pad(Math.round(to * (1 - Math.pow(1 - p, 3)))); if (p < 1) requestAnimationFrame(step); };
+  el.textContent = '00'; requestAnimationFrame(step);
+}
+function observe(){
+  [spy, revIO, cntIO].forEach((o) => o && o.disconnect());
+  if (!('IntersectionObserver' in window)) { $$('.reveal').forEach((e) => e.classList.add('in')); return; }
+  spy = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) setActive(NAVMAP[e.target.dataset.sec] || 'overview'); }), { rootMargin: '-40% 0px -55% 0px' });
+  $$('[data-sec]').forEach((s) => spy.observe(s));
+  revIO = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); revIO.unobserve(e.target); } }), { threshold: .12 });
+  $$('.reveal').forEach((r) => revIO.observe(r));
+  cntIO = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { animateCount(e.target); cntIO.unobserve(e.target); } }), { threshold: .6 });
+  $$('.num[data-count]').forEach((n) => cntIO.observe(n));
+}
+
+/* =========================================================
+   7. NAVIGATION HELPERS
+   ========================================================= */
+function goTo(id){
+  const el = document.getElementById(id); if (!el) return;
+  el.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'start' });
+  el.classList.remove('flash'); void el.offsetWidth; el.classList.add('flash');
+  setTimeout(() => el.classList.remove('flash'), 1800);
+}
+function selectPlayer(key){
+  state.sel = key;
+  $$('.db-row').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.select === key)));
+  renderDetail();
+}
+let tt;
+function toast(msg){ const t = $('#toast'); t.textContent = msg; t.classList.add('show'); clearTimeout(tt); tt = setTimeout(() => t.classList.remove('show'), 2800); }
+
+/* =========================================================
+   8. SEARCH (unified, live, client-side)
+   ========================================================= */
+let INDEX = [];
+function buildIndex(){
+  INDEX = []; let n = 0;
+  const put = (o) => { o.order = n++; o.hay = (o.title + ' ' + o.sub + ' ' + (o.kw || '')).toLowerCase(); INDEX.push(o); };
+  A.players.forEach((p) => put({ cat: 'players', kind: 'Player', title: p.name, sub: p.role + ' — ' + p.classification,
+    kw: [p.role, p.classification, p.joined, p.pid, p.status].concat(p.eras.map((u) => 'era ' + eraNo(u))).join(' '), go: { t: 'player', key: p.key } }));
+  const byRole = new Map();
+  A.players.forEach((p) => { const k = p.role.toLowerCase(); if (!byRole.has(k)) byRole.set(k, { role: p.role, list: [] }); byRole.get(k).list.push(p); });
+  byRole.forEach((r) => { const rk = roleKey(r.role), d = ROLE_DEFS.find((x) => x.key === rk);
+    put({ cat: 'roles', kind: 'Role', title: r.role, sub: 'Held by ' + r.list.map((x) => x.name).join(', '), kw: d ? d.alias : '', go: { t: 'role', key: rk } }); });
+  const lt = leadTitles(), parts = new Map();
+  A.players.forEach((p) => p.classification.split('·').map((s) => s.trim()).filter((s) => s && !lt.has(s.toLowerCase())).forEach((s) => { if (!parts.has(s)) parts.set(s, []); parts.get(s).push(p); }));
+  parts.forEach((list, name) => put({ cat: 'players', kind: 'Roster', title: name, sub: list.map((x) => x.name).join(', '), kw: 'roster squad', go: { t: 'roster' } }));
+  A.leadership.forEach((l) => put({ cat: 'leadership', kind: 'Leadership', title: l.title + ' — ' + l.name, sub: 'Recorded since ' + l.from + ' / Era ' + eraNo(l.era), kw: (l.note || '') + ' leadership', go: { t: 'leadership' } }));
+  A.timeline.forEach((e) => put({ cat: 'timeline', kind: 'Timeline', title: e.title + ' (' + e.type + ')', sub: e.date + ' / ' + e.code, kw: e.description + ' event ' + e.iso.slice(0, 4) + ' era ' + eraNo(e.era), yr: [e.iso.slice(0, 4)], go: { t: 'event', id: e.id } }));
+  A.eras.forEach((e) => put({ cat: 'era', kind: 'Era', title: 'Era ' + e.id + ' — ' + e.title, sub: e.date + ' / ' + playersOfEra(e.uid).map((p) => p.name).join(', '), kw: (e.note || '') + ' era chapter', yr: [e.iso.slice(0, 4)], go: { t: 'era', uid: e.uid } }));
+}
+function hl(text, tokens){
+  const low = text.toLowerCase(), r = [];
+  tokens.forEach((t) => { if (!t) return; let i = 0; while ((i = low.indexOf(t, i)) > -1) { r.push([i, i + t.length]); i += t.length; } });
+  if (!r.length) return esc(text);
+  r.sort((a, b) => a[0] - b[0]);
+  const m = [r[0]]; r.slice(1).forEach((x) => { const l = m[m.length - 1]; if (x[0] <= l[1]) l[1] = Math.max(l[1], x[1]); else m.push(x); });
+  let out = '', p = 0; m.forEach((x) => { out += esc(text.slice(p, x[0])) + '<mark>' + esc(text.slice(x[0], x[1])) + '</mark>'; p = x[1]; });
+  return out + esc(text.slice(p));
+}
+const FILTERS = [['all', 'All'], ['players', 'Players'], ['roles', 'Roles'], ['timeline', 'Timeline'], ['leadership', 'Leadership'], ['era', 'Era']];
+let cur = [];
+function runSearch(){
+  const q = state.q.trim().toLowerCase(), cat = state.cat, res = $('#sRes'), cnt = $('#sCount');
+  $$('#chips .chip').forEach((c) => c.setAttribute('aria-pressed', String(c.dataset.cat === cat)));
+  if (!q) {
+    cur = [];
+    cnt.textContent = INDEX.length + ' records indexed';
+    res.innerHTML = '<li class="s-empty">Cari nama pemain, role, event, tahun, era, founder, captain, atau roster.<div class="s-sugg">' +
+      ['tajudin', 'jungle', '2026', 'founder', 'roster'].map((s) => '<button type="button" class="chip" data-suggest="' + s + '">' + s + '</button>').join('') + '</div></li>';
+    return;
+  }
+  const tokens = q.split(/\s+/).filter(Boolean), yearOnly = /^\d{4}$/.test(q), out = [];
+  INDEX.forEach((it) => {
+    if (cat !== 'all' && it.cat !== cat) return;
+    if (yearOnly) { if (it.yr && it.yr.includes(q)) out.push({ it, score: 1 }); return; }
+    if (!tokens.every((t) => it.hay.includes(t))) return;
+    const tl = it.title.toLowerCase(); let s = 0;
+    tokens.forEach((t) => { s += tl.startsWith(t) ? 3 : tl.includes(t) ? 2 : 1; });
+    out.push({ it, score: s });
+  });
+  out.sort((a, b) => b.score - a.score || a.it.order - b.it.order);
+  cur = out.map((x) => x.it);
+  cnt.textContent = cur.length + (cur.length === 1 ? ' result' : ' results');
+  res.innerHTML = cur.length ? cur.map((it, i) => '<li style="--i:' + Math.min(i, 10) + '"><button type="button" class="res" data-idx="' + i + '"><span class="res-kind mono">' + it.kind + '</span><span class="res-main"><span class="res-title">' + hl(it.title, yearOnly ? [q] : tokens) + '</span><span class="res-sub">' + hl(it.sub, yearOnly ? [q] : tokens) + '</span></span>' + ic('arrow', 18) + '</button></li>').join('')
+    : '<li class="s-empty">Tidak ada catatan yang cocok. ' + NA + '.</li>';
+}
+function openResult(it){
+  $('#searchDlg').close();
+  const g = it.go;
+  setTimeout(() => {
+    if (g.t === 'player') { selectPlayer(g.key); goTo('player-detail'); }
+    else if (g.t === 'role') goTo(g.key ? 'node-' + g.key : 'rolemap');
+    else if (g.t === 'event') goTo('ev-' + g.id);
+    else if (g.t === 'era') goTo('era-' + g.uid);
+    else if (g.t === 'leadership') goTo('leadership');
+    else if (g.t === 'roster') goTo('roster');
+  }, 60);
+}
+function openSearch(){ const d = $('#searchDlg'); if (!d.open) d.showModal(); runSearch(); setTimeout(() => $('#q').focus(), 30); }
+
+/* =========================================================
+   9. ARCHIVE EDITOR (localStorage, tambahan saja)
+   ========================================================= */
+const TABS = [['player', 'Player'], ['event', 'Event'], ['era', 'Era'], ['lead', 'Leadership'], ['status', 'Status'], ['data', 'Data']];
+const fld = (id, label, inner, hint) => '<div class="fld"><label for="' + id + '">' + label + '</label>' + inner + (hint ? '<small>' + hint + '</small>' : '') + '</div>';
+const inp = (id, type, extra) => '<input id="' + id + '" name="' + id + '" type="' + (type || 'text') + '" ' + (extra || '') + '>';
+function eraOptions(){ const last = A.eras[A.eras.length - 1].uid; return A.eras.map((e) => '<option value="' + esc(e.uid) + '"' + (e.uid === last ? ' selected' : '') + '>Era ' + e.id + ' — ' + esc(e.title) + '</option>').join(''); }
+function renderEditor(){
+  $('#eTabs').innerHTML = TABS.map((t) => '<button type="button" class="chip" data-tab="' + t[0] + '" aria-pressed="' + (state.tab === t[0]) + '">' + t[1] + '</button>').join('');
+  const eo = eraOptions(); let h = '';
+  const submit = (label) => '<button class="btn primary" type="submit">' + ic('plus', 16) + label + '</button>';
+  if (state.tab === 'player') h = '<form id="fPlayer" autocomplete="off">' + fld('pName', 'Player name', inp('pName', 'text', 'required maxlength="40"')) +
+    '<div class="frow">' + fld('pRole', 'Role', inp('pRole', 'text', 'required maxlength="40" list="roleList"') + '<datalist id="roleList"><option value="EXP Lane"><option value="Roam"><option value="Jungler"><option value="Mid Lane"><option value="Gold Lane"></datalist>') + fld('pJoined', 'Join date', inp('pJoined', 'date', 'required')) + '</div>' +
+    '<div class="frow">' + fld('pClass', 'Classification', inp('pClass', 'text', 'required maxlength="80" value="Roster"'), 'Contoh: Roster, Substitute, atau sesuai catatan resmi.') + fld('pEra', 'Era', '<select id="pEra" name="pEra">' + eo + '</select>') + '</div>' + submit('Add player') + '</form>';
+  if (state.tab === 'event') h = '<form id="fEvent" autocomplete="off"><div class="frow">' + fld('vDate', 'Date', inp('vDate', 'date', 'required')) + fld('vType', 'Event type', inp('vType', 'text', 'required maxlength="40" list="typeList"') + '<datalist id="typeList"><option value="Roster Change"><option value="Leadership"><option value="Achievement"><option value="Rebranding"><option value="Milestone"></datalist>') + '</div>' +
+    fld('vTitle', 'Title', inp('vTitle', 'text', 'required maxlength="80"')) + fld('vDesc', 'Description', '<textarea id="vDesc" name="vDesc" required maxlength="500"></textarea>') + fld('vEra', 'Era', '<select id="vEra" name="vEra">' + eo + '</select>') + submit('Add event') + '</form>';
+  if (state.tab === 'era') h = '<form id="fEra" autocomplete="off">' + fld('gTitle', 'Era name', inp('gTitle', 'text', 'required maxlength="60"'), 'Akan diberi nomor otomatis: Era ' + toRoman(A.eras.length + 1) + '.') + fld('gDate', 'Start date', inp('gDate', 'date', 'required')) + fld('gNote', 'Note (optional)', inp('gNote', 'text', 'maxlength="300"')) + submit('Add era') + '</form>';
+  if (state.tab === 'lead') h = '<form id="fLead" autocomplete="off"><div class="frow">' + fld('lTitle', 'Title', inp('lTitle', 'text', 'required maxlength="40" list="leadList"') + '<datalist id="leadList"><option value="Founder"><option value="Captain"></datalist>') +
+    fld('lName', 'Name', inp('lName', 'text', 'required maxlength="40" list="nameList"') + '<datalist id="nameList">' + A.players.map((p) => '<option value="' + esc(p.name) + '">').join('') + '</datalist>') + '</div>' +
+    '<div class="frow">' + fld('lFrom', 'Since', inp('lFrom', 'date', 'required')) + fld('lEra', 'Era', '<select id="lEra" name="lEra">' + eo + '</select>') + '</div>' + fld('lNote', 'Note (optional)', inp('lNote', 'text', 'maxlength="300"')) + submit('Add leadership record') + '</form>';
+  if (state.tab === 'status') h = '<form id="fStatus"><p class="dim" style="margin-bottom:10px;font-size:.88rem">Ubah hanya jika catatan resminya sudah tersedia.</p>' + A.status.map((s, i) => '<div class="sel-row"><label for="st' + i + '">' + esc(s.key) + '</label><select id="st' + i + '" data-key="' + esc(s.key) + '"><option value="recorded"' + (s.state === 'recorded' ? ' selected' : '') + '>Recorded</option><option value="not-recorded"' + (s.state !== 'recorded' ? ' selected' : '') + '>Not yet recorded</option></select></div>').join('') + '<div class="e-actions" style="margin-top:16px"><button class="btn primary" type="submit">Save status</button></div></form>';
+  if (state.tab === 'data') {
+    const rows = [].concat(add.players.map((p) => ['players', p.id, 'Player — ' + p.name]), add.events.map((e) => ['events', e.id, 'Event — ' + e.title]), add.eras.map((e) => ['eras', e.uid, 'Era — ' + e.title]), add.leadership.map((l) => ['leadership', l.id, 'Leadership — ' + l.title + ' ' + l.name]));
+    h = '<div class="e-actions"><button class="btn" type="button" data-export>' + ic('download', 16) + 'Export Archive</button><button class="btn" type="button" data-import>' + ic('upload', 16) + 'Import Archive</button><button class="btn danger" type="button" data-reset>' + ic('reset', 16) + 'Reset Archive</button></div>' +
+      '<input type="file" id="importFile" accept="application/json,.json" hidden aria-label="Import archive JSON file">' +
+      '<p class="dim" style="font-size:.86rem">Export/Import memakai format JSON. Import hanya mengganti catatan tambahan; data resmi bawaan tetap utuh. Reset menghapus semua catatan tambahan dan mengembalikan arsip ke data awal.</p>' +
+      '<h3 class="e-h">Custom records (' + rows.length + ')</h3>' + (rows.length ? '<ul class="e-list">' + rows.map((r) => '<li><span>' + esc(r[2]) + '</span><button class="btn sm danger" type="button" data-rm="' + r[0] + '|' + esc(r[1]) + '" aria-label="Remove ' + esc(r[2]) + '">' + ic('trash', 16) + '</button></li>').join('') + '</ul>' : '<p class="dim" style="padding:8px 0">' + NA + '.</p>');
+  }
+  $('#eBody').innerHTML = h;
+}
+function msg(t){ $('#eMsg').textContent = t; }
+function refresh(keepMsg){
+  A = build();
+  if (!A.players.some((p) => p.key === state.sel)) state.sel = A.players[0].key;
+  if (!A.eras.some((e) => e.uid === state.mapEra)) state.mapEra = A.eras[A.eras.length - 1].uid;
+  renderAll(); buildIndex(); if ($('#searchDlg').open) runSearch(); if ($('#editorDlg').open) renderEditor();
+  if (!keepMsg) msg('');
+}
+function persist(okMsg){ if (saveAdd(add)) { refresh(true); msg(okMsg); toast(okMsg); } }
+function download(name, text){ const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([text], { type: 'application/json' })); a.download = name; document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 1500); }
+
+/* =========================================================
+   10. EVENTS
+   ========================================================= */
+let deferred = null;
+window.addEventListener('beforeinstallprompt', (e) => { e.preventDefault(); deferred = e; const b = $('#installBtn'); if (b) b.hidden = false; });
+
+document.addEventListener('click', (e) => {
+  const t = e.target.closest('button,a'); if (!t) return;
+  if (t.matches('[data-open-search]')) return openSearch();
+  if (t.matches('[data-open-editor]')) { const d = $('#editorDlg'); renderEditor(); msg(''); d.showModal(); return; }
+  if (t.matches('[data-close]')) return t.closest('dialog').close();
+  if (t.dataset.select) return selectPlayer(t.dataset.select);
+  if (t.dataset.openPlayer) { selectPlayer(t.dataset.openPlayer); return goTo('player-detail'); }
+  if (t.dataset.go) { e.preventDefault(); return goTo(t.dataset.go); }
+  if (t.dataset.mapEra) { state.mapEra = t.dataset.mapEra; return renderRoleMap(); }
+  if (t.id === 'installBtn' && deferred) { deferred.prompt(); deferred = null; t.hidden = true; return; }
+  if (t.matches('[data-download-card]')) return downloadCard();
+  if (t.matches('[data-copy-group]')) return copyGroupLink();
+  if (t.matches('[data-no-group]')) { e.preventDefault(); toast('Link grup WhatsApp belum dikonfigurasi. Tambahkan WA_GROUP_LINK di kode situs.'); return; }
+  if (t.dataset.nav) setActive(t.dataset.nav);
+});
+
+/* join / recruitment form */
+$('#join').addEventListener('submit', (e) => { if (e.target && e.target.id === 'joinFormEl') { e.preventDefault(); handleJoinSubmit(e.target); } });
+$('#join').addEventListener('input', (e) => {
+  const id = e.target && e.target.id;
+  if (id && id.indexOf('f-') === 0) { const errEl = document.getElementById('err-' + id.slice(2)); if (errEl && errEl.textContent) { errEl.textContent = ''; e.target.removeAttribute('aria-invalid'); } }
+});
+window.addEventListener('hashchange', handleHash);
+
+/* search dialog */
+$('#chips').innerHTML = FILTERS.map((f) => '<button type="button" class="chip" data-cat="' + f[0] + '" aria-pressed="' + (f[0] === 'all') + '">' + f[1] + '</button>').join('');
+$('#q').addEventListener('input', (e) => { state.q = e.target.value; runSearch(); });
+$('#chips').addEventListener('click', (e) => { const b = e.target.closest('[data-cat]'); if (b) { state.cat = b.dataset.cat; runSearch(); } });
+$('#sRes').addEventListener('click', (e) => {
+  const s = e.target.closest('[data-suggest]'); if (s) { $('#q').value = s.dataset.suggest; state.q = s.dataset.suggest; runSearch(); $('#q').focus(); return; }
+  const r = e.target.closest('[data-idx]'); if (r) openResult(cur[+r.dataset.idx]);
+});
+document.addEventListener('keydown', (e) => {
+  const tag = (e.target.tagName || '').toLowerCase();
+  if ((e.key === '/' && tag !== 'input' && tag !== 'textarea' && tag !== 'select') || ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k')) { e.preventDefault(); openSearch(); }
+});
+['searchDlg', 'editorDlg'].forEach((id) => {
+  const d = document.getElementById(id);
+  d.addEventListener('click', (e) => { if (e.target === d) d.close(); });
+  d.addEventListener('close', () => { if (!$('dialog[open]')) document.documentElement.classList.remove('lock'); });
+  d.addEventListener('cancel', () => {});
+  const orig = d.showModal.bind(d); d.showModal = () => { document.documentElement.classList.add('lock'); orig(); };
+});
+
+/* editor */
+$('#eTabs').addEventListener('click', (e) => { const b = e.target.closest('[data-tab]'); if (b) { state.tab = b.dataset.tab; msg(''); renderEditor(); } });
+$('#eBody').addEventListener('submit', (e) => {
+  e.preventDefault(); const f = e.target, v = (id) => S(f.elements[id] ? f.elements[id].value : '', 500);
+  if (f.id === 'fPlayer') { add.players.push({ id: uid(), name: v('pName'), role: v('pRole'), joined: fmtDate(v('pJoined')), classification: v('pClass') || 'Roster', eras: [v('pEra')] }); persist('Player ditambahkan ke arsip.'); }
+  else if (f.id === 'fEvent') { add.events.push({ id: uid(), iso: v('vDate'), type: v('vType'), title: v('vTitle'), description: v('vDesc'), era: v('vEra') }); persist('Event ditambahkan ke arsip.'); }
+  else if (f.id === 'fEra') { add.eras.push({ uid: uid(), title: v('gTitle'), iso: v('gDate'), note: v('gNote') }); persist('Era ditambahkan ke arsip.'); }
+  else if (f.id === 'fLead') { add.leadership.push({ id: uid(), title: v('lTitle'), name: v('lName'), from: fmtDate(v('lFrom')), era: v('lEra'), note: v('lNote') }); persist('Catatan kepemimpinan ditambahkan.'); }
+  else if (f.id === 'fStatus') { const st = {}; $$('select[data-key]', f).forEach((s) => { const d = squadData.status.find((x) => x.key === s.dataset.key); if (d && d.state !== s.value) st[s.dataset.key] = s.value; }); add.status = st; persist('Status arsip disimpan.'); }
+});
+$('#eBody').addEventListener('click', (e) => {
+  const b = e.target.closest('button'); if (!b) return;
+  if (b.matches('[data-export]')) { download('ws-archive-' + new Date().toISOString().slice(0, 10) + '.json', JSON.stringify({ format: 'ws-archive', version: 1, archiveId: squadData.archive.id, exportedAt: new Date().toISOString(), additions: add }, null, 2)); msg('Archive diekspor sebagai JSON.'); }
+  else if (b.matches('[data-import]')) $('#importFile').click();
+  else if (b.matches('[data-reset]')) { if (confirm('Reset Archive? Semua catatan tambahan akan dihapus dan arsip kembali ke data awal.')) { add = emptyAdd(); try { localStorage.removeItem(KEY); } catch (er) {} refresh(true); msg('Arsip dikembalikan ke data awal.'); toast('Arsip direset ke data awal.'); } }
+  else if (b.dataset.rm) { const [k, id] = b.dataset.rm.split('|'); const key = k === 'eras' ? 'uid' : 'id'; add[k] = add[k].filter((x) => x[key] !== id); persist('Catatan dihapus.'); }
+});
+$('#eBody').addEventListener('change', (e) => {
+  if (e.target.id !== 'importFile' || !e.target.files[0]) return;
+  const file = e.target.files[0], rd = new FileReader();
+  rd.onload = () => {
+    try {
+      const j = JSON.parse(rd.result);
+      if (!j || typeof j !== 'object' || (j.format && j.format !== 'ws-archive')) throw new Error('format');
+      const clean = sanitizeAdd(j.additions || j);
+      const n = clean.players.length + clean.events.length + clean.eras.length + clean.leadership.length + Object.keys(clean.status).length;
+      if (!confirm('Import ' + n + ' catatan tambahan? Catatan tambahan yang ada sekarang akan diganti. Data resmi bawaan tidak berubah.')) return;
+      add = clean; persist('Import berhasil: ' + n + ' catatan tambahan.');
+    } catch (er) { msg('Import gagal: file bukan arsip JSON yang valid.'); }
+  };
+  rd.readAsText(file); e.target.value = '';
+});
+
+/* =========================================================
+   11. INIT + PWA
+   ========================================================= */
+if (window.location.hash === '#register') state.join = 'form';
+A = build(); state.sel = A.players[0].key; state.mapEra = A.eras[A.eras.length - 1].uid;
+renderAll(); buildIndex();
+if (window.location.hash === '#register') { const el = document.getElementById('join'); if (el) el.scrollIntoView({ behavior: 'auto', block: 'start' }); }
+if ('serviceWorker' in navigator && /^https?:$/.test(location.protocol)) window.addEventListener('load', () => navigator.serviceWorker.register('service-worker.js').catch(() => {}));
+})();
+</script>
+</body>
+</html>
